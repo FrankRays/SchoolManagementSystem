@@ -3,3 +3,9 @@ School Management System (will be referred as SMS in this document) is acomputer
 Testing...
 
 Testing Github problem on Sushmita's pc...
+
+Problem solved by following this steps :
+
+Delete the whole repositiry fron windows explorer.
+then re clone the repository.
+SHOVAN SAHA
