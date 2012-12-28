@@ -67,11 +67,12 @@ namespace SchoolManagementData
         public DateTime date { get; set; }
     }
 
-    public class TodoInfo
+    public class BookInfo
     {
         public string id { get; set; }
-        public DateTime date { get; set; }
-        public string details { get; set; }
+        public DateTime issueDate { get; set; }
+        public List<string> author { get; set; }
+        public List<string> tag { get; set; }
     }
 
     public class WellWisherInfo
@@ -84,7 +85,20 @@ namespace SchoolManagementData
         public string remarks { get; set; }
     }
 
-
+    public class AdmissionInfo
+    {
+        public string id { get; set; }
+        public string name { get; set; }
+        public string purpose { get; set; }
+        public int ageLimit { get; set; }
+        public string Venue { get; set; }
+        public string coordinatorPhone { get; set; }
+        public string admittedAddress { get; set; }
+        public DateTime examDate { get; set; }
+        public DateTime resultDate { get; set; }
+        public List<string> subjects { get; set; }
+        public int numberOfSeats { get; set; }
+    }
 
 
 }
