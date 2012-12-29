@@ -1,0 +1,397 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities />
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>SchoolManagementSystem.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>App</Name>
+        <Access>Public</Access>
+        <Location left="456" top="793" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public App()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">public static Void Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="678" top="793" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button button1</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MainWindow()</Member>
+        <Member type="Method">private Void button1_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AdmissionController</Name>
+        <Access>Public</Access>
+        <Location left="254" top="793" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private CourseController course</Member>
+        <Member type="Field">private List&lt;StudentInfo&gt; registeredStudents</Member>
+        <Member type="Constructor">public AdmissionController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StudentController</Name>
+        <Access>Public</Access>
+        <Location left="278" top="543" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;StudentInfo&gt; students</Member>
+        <Member type="Constructor">public StudentController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FacultyController</Name>
+        <Access>Public</Access>
+        <Location left="23" top="247" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;FacultyInfo&gt; faculties</Member>
+        <Member type="Constructor">public FacultyController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CourseController</Name>
+        <Access>Public</Access>
+        <Location left="23" top="793" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 maxStudents</Member>
+        <Member type="Field">private Int32 minFaculties</Member>
+        <Member type="Field">private Int32 noOfDays</Member>
+        <Member type="Field">private List&lt;CourseInfo&gt; coursesToBeTaught</Member>
+        <Member type="Constructor">public CourseController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AttendanceLeaveController</Name>
+        <Access>Public</Access>
+        <Location left="108" top="10" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 minAttendance</Member>
+        <Member type="Field">private List&lt;DateTime&gt; classDays</Member>
+        <Member type="Field">private List&lt;DateTime&gt; holidays</Member>
+        <Member type="Constructor">public AttendanceLeaveController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LibraryController</Name>
+        <Access>Public</Access>
+        <Location left="658" top="543" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;BookInfo&gt; books</Member>
+        <Member type="Constructor">public LibraryController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AccountsController</Name>
+        <Access>Public</Access>
+        <Location left="658" top="295" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;TransactionInfo&gt; coursesToBeTaught</Member>
+        <Member type="Constructor">public AccountsController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AdministrationController</Name>
+        <Access>Public</Access>
+        <Location left="357" top="148" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private AccountsController accounts</Member>
+        <Member type="Field">private AdministrationController admission</Member>
+        <Member type="Field">private StudentController studentsCon</Member>
+        <Member type="Field">private FacultyController facultyCon</Member>
+        <Member type="Field">private AttendanceLeaveController attCon</Member>
+        <Member type="Field">private LibraryController lib</Member>
+        <Member type="Constructor">public AdministrationController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>course</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>accounts</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>admission</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>studentsCon</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>facultyCon</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>attCon</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>lib</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>SchoolManagementSystem.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>App</Name>
+        <Access>Public</Access>
+        <Location left="539" top="676" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public App()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">public static Void Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="49" top="676" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button button1</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MainWindow()</Member>
+        <Member type="Method">private Void button1_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AdmissionController</Name>
+        <Access>Public</Access>
+        <Location left="759" top="676" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private CourseController course</Member>
+        <Member type="Field">private List&lt;StudentInfo&gt; registeredStudents</Member>
+        <Member type="Constructor">public AdmissionController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StudentController</Name>
+        <Access>Public</Access>
+        <Location left="299" top="676" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;StudentInfo&gt; students</Member>
+        <Member type="Constructor">public StudentController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FacultyController</Name>
+        <Access>Public</Access>
+        <Location left="419" top="10" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;FacultyInfo&gt; faculties</Member>
+        <Member type="Constructor">public FacultyController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CourseController</Name>
+        <Access>Public</Access>
+        <Location left="741" top="13" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 maxStudents</Member>
+        <Member type="Field">private Int32 minFaculties</Member>
+        <Member type="Field">private Int32 noOfDays</Member>
+        <Member type="Field">private List&lt;CourseInfo&gt; coursesToBeTaught</Member>
+        <Member type="Constructor">public CourseController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AttendanceLeaveController</Name>
+        <Access>Public</Access>
+        <Location left="34" top="20" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 minAttendance</Member>
+        <Member type="Field">private List&lt;DateTime&gt; classDays</Member>
+        <Member type="Field">private List&lt;DateTime&gt; holidays</Member>
+        <Member type="Constructor">public AttendanceLeaveController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LibraryController</Name>
+        <Access>Public</Access>
+        <Location left="34" top="276" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;BookInfo&gt; books</Member>
+        <Member type="Constructor">public LibraryController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AccountsController</Name>
+        <Access>Public</Access>
+        <Location left="637" top="313" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;TransactionInfo&gt; coursesToBeTaught</Member>
+        <Member type="Constructor">public AccountsController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AdministrationController</Name>
+        <Access>Public</Access>
+        <Location left="369" top="369" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private AccountsController accounts</Member>
+        <Member type="Field">private AdministrationController admission</Member>
+        <Member type="Field">private StudentController studentsCon</Member>
+        <Member type="Field">private FacultyController facultyCon</Member>
+        <Member type="Field">private AttendanceLeaveController attCon</Member>
+        <Member type="Field">private LibraryController lib</Member>
+        <Member type="Constructor">public AdministrationController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>course</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>accounts</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>admission</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>studentsCon</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>facultyCon</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>attCon</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>lib</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

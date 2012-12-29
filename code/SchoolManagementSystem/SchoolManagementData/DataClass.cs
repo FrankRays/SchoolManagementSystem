@@ -74,16 +74,7 @@ namespace SchoolManagementData
         public List<string> author { get; set; }
         public List<string> tag { get; set; }
     }
-
-    public class WellWisherInfo
-    {
-        public string id { get; set; }
-        public string name { get; set; }
-        public string address { get; set; }
-        public DateTime doj { get; set; }
-        public string phone { get; set; }
-        public string remarks { get; set; }
-    }
+       
 
     public class AdmissionInfo
     {

@@ -23,5 +23,10 @@ namespace SchoolManagementSystem
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            AdministrationController contrler;
+        }
     }
 }
