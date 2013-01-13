@@ -1,12 +1,41 @@
-package EMS;
-public class MainWindow extends javax.swing.JFrame {
- 
-    public MainWindow() {
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package schoolmanagementsystem;
+
+/**
+ *
+ * @author ibm
+ */
+
+public class SchoolManagementSystem extends javax.swing.JFrame{
+
+    /**
+     * @param args the command line arguments
+     */
+public SchoolManagementSystem() {
         initComponents();
     }
-    
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+// Variables declaration - do not modify                     
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
+    // End of variables declaration                   
+private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
@@ -29,17 +58,13 @@ public class MainWindow extends javax.swing.JFrame {
         setTitle("E-mail Contacts");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(" Name "));
+        
         jPanel1.setToolTipText("LOGIN");
 
         jLabel1.setText("First Name:");
 
         jTextField1.setText("John");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
+        
         jLabel3.setText("PASSWORD");
 
         jPasswordField1.setText("jPasswordField1");
@@ -93,12 +118,7 @@ public class MainWindow extends javax.swing.JFrame {
         jButton6.setText("LEAVE MANAGEMENT");
 
         jButton5.setText("Cancel");
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton5MouseClicked(evt);
-            }
-        });
-
+        
         jButton7.setText("FACULTY");
 
         jButton8.setText("STUDENT");
@@ -175,42 +195,13 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.getAccessibleContext().setAccessibleName("LOGIN");
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jButton5MouseClicked
-    
-    public static void main(String args[]) {
+    }// </editor-fold>
+    public static void main(String[] args) {
+        // TODO code application logic here
         java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
             public void run() {
-                new MainWindow().setVisible(true);
+                new SchoolManagementSystem().setVisible(true);
             }
         });
     }
-    
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
-    // End of variables declaration//GEN-END:variables
-    
 }
