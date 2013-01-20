@@ -7,6 +7,45 @@
             <TabItem Header="tabItem1" Name="tabItem1">
                 <RadioButton />
             </TabItem>
+        <TabItem Header="Listview" >
+            <Grid>
+                <ListView ItemsSource="{Binding Students}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="2"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Name}" Grid.Column="0"/>
+                                <TextBlock Text="{Binding RollNo}" Grid.Column="2"/>
+                                <ListView ItemsSource="{Binding SubjectAndMarks}" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" BorderThickness="0">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="5"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="{Binding Subject}" Grid.Column="0"/>
+                                                <TextBlock Text="{Binding Marks}" Grid.Column="2"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </TabItem>
         <TabItem Header="button">
             <Button Content="Button" Height="23" Name="button1" Width="75" />
         </TabItem>
