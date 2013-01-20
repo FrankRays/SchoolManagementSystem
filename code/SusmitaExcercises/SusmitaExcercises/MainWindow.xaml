@@ -8,7 +8,7 @@
                 <RadioButton />
             </TabItem>
         <TabItem Header="Listview" >
-            <Grid>
+            
                 <ListView ItemsSource="{Binding Students}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -44,7 +44,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </Grid>
+           
         </TabItem>
         <TabItem Header="button">
             <Button Content="Button" Height="23" Name="button1" Width="75" />
