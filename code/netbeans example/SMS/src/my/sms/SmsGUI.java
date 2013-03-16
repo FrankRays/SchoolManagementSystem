@@ -72,7 +72,9 @@ public class SmsGUI extends javax.swing.JFrame {
         logoPanel.setLayout(logoPanelLayout);
         logoPanelLayout.setHorizontalGroup(
             logoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(logoPanelLayout.createSequentialGroup()
+                .add(jLabel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 126, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(0, 0, Short.MAX_VALUE))
         );
         logoPanelLayout.setVerticalGroup(
             logoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -199,7 +201,7 @@ public class SmsGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(loginPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(logoPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(logoPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(activityPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -217,7 +219,7 @@ public class SmsGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_crsBtnActionPerformed
 
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
-       System.exit(0);
+       System.exit(1);
     }//GEN-LAST:event_exitBtnActionPerformed
 
     private void admBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_admBtnActionPerformed
