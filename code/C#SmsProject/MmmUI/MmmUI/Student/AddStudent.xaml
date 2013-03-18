@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="SMSUI.AddStudent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="412" d:DesignWidth="334">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/SmsStyle;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <DockPanel  Background="#FF6B736D" LastChildFill="True">
+            <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                <Button Style="{StaticResource MainBtnStyle}" Name="resetAgentInfoBtn">Reset</Button>
+                <Button Style="{StaticResource MainBtnStyle}" Name="agentInfoSubmitBtn">Submit</Button>
+            </UniformGrid>
+            <UniformGrid Columns="2" DockPanel.Dock="Top">
+                <!--<Label  Style="{StaticResource labelStyle}">Title</Label>
+                <ComboBox  Name="titleNameCombobox"  Style="{StaticResource comboboxStyle}">
+                    <ComboBoxItem>Mr.</ComboBoxItem>
+                    <ComboBoxItem>Mrs.</ComboBoxItem>
+                    <ComboBoxItem>Ms.</ComboBoxItem>
+                </ComboBox>-->
+                <Label  Style="{StaticResource labelStyle}">Student Name</Label>
+                <TextBox  Name="studentNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                
+                <Label Style="{StaticResource labelStyle}">Guardian Name</Label>
+                <TextBox  Name="GuardianNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Address</Label>
+                <TextBox  Name="addressTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Phone Number</Label>
+                <TextBox  Name="phoneNoTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Date of Birth</Label>
+                <DatePicker  Name="dobDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label Style="{StaticResource labelStyle}">Blood Group</Label>
+                <TextBox  Name="bloodGroupTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                
+                
+                
+                <Label Style="{StaticResource labelStyle}">Join Class</Label>
+                <TextBox  Name="joinClassTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">School From</Label>
+                <TextBox  Name="schoolFromTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label  Style="{StaticResource labelStyle}">Join date</Label>
+                <DatePicker Name="joinDatePicker" Style="{StaticResource datePickerStyle}"></DatePicker>
+            </UniformGrid>
+        </DockPanel>
+    </ScrollViewer>
+</UserControl>
