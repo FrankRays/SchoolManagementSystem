@@ -21,7 +21,7 @@
             <Button Content="Settings" Name="settingsBtn" Style="{StaticResource MainBtnStyle}"  Click="settingsBtn_Click"></Button>
             <Button Content="Notice" Name="noticeBtn" Style="{StaticResource MainBtnStyle}" Click="noticeBtn_Click"></Button>
             <Button Content="Help" Name="helpBtn" Style="{StaticResource MainBtnStyle}"  Click="helpBtn_Click"></Button>
-            <Button Content="Close" Name="closeBtn" Style="{StaticResource MainBtnStyle}"  Click="closeBtn_Click"></Button>
+            <Button Content="Close" Name="closeBtn" Style="{StaticResource MainBtnStyle}"  Click="closeBtn_Click" ></Button>
         </UniformGrid>
         <UniformGrid DockPanel.Dock="Right" Name="mainUniGrid">
             <my:Signin />

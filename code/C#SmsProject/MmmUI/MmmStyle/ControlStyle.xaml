@@ -62,7 +62,7 @@
                 </RadialGradientBrush>
             </Setter.Value>
         </Setter>
-        <Setter Property="Foreground" Value="#FF30962D" />
+        <Setter Property="Foreground" Value="#FF1E809D" />
         <Setter Property="FontSize" Value="32" />
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="BorderBrush" Value="#FF001900" />
@@ -81,7 +81,7 @@
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="border" Property="BorderBrush" Value="#FF87742D" />
                             <Setter Property="Button.Background" Value="#FFE0EADB" />
-                            <Setter Property="Button.Foreground" Value="Green" />
+                            <Setter Property="Button.Foreground" Value="#FF8D8D51" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="border" Property="BorderBrush" Value="White" />
@@ -98,6 +98,10 @@
     <Style x:Key="datePickerStyle" TargetType="DatePicker">
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Margin" Value="10"/>
+    </Style>
+    <Style x:Key="usrecntrl" TargetType="UserControl">
+        <Setter Property="Background" Value="#FFC999D1" />
+        
     </Style>
 
 
