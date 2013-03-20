@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.ui-hide_S40tab{
+	display: none;
+}
+.ui-show_S40tab{
+	display: block;
+}
+
+.ui-tab-control_S40tab {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #8B8C8C;
+}
+.ui-tab_S40tab {
+	margin:0px; 
+	padding-top: 10px;
+	text-align: center;
+	height: 30px;
+	vertical-align: middle;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+	border-bottom: 1px solid #999;
+	font-weight: bold;
+	width:32.5%;
+}
+.ui-tab-selected_S40tab{
+	background-color:#FFF;
+	color:#090;
+	background-image: none;
+	border-bottom-color: #fff;
+}
+
+.ui-tab-not-selected_S40tab {
+  color: black;
+  background-image:url(../images/tab_bg.png);
+}
+
+.ui-tab-content-row_S40tab{
+	background-color:#FFF;
+	padding: 8px;
+	list-style: none;
+	margin: 0px;
+}
+
+

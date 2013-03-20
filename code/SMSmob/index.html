@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SMSmob</title>
+    <link href="s40-theme/css/s40-theme.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="s40-theme/js/screensize.js"></script>
+    <script type="text/javascript">		
+		function refreshPageContent() {
+				// Add code for refreshing the page here...				
+		}		
+	</script>
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_labeled_text_field.css" />
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_button.css" />
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_text_field_with_button.css" />
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_category_list.css" />
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_category_list_item.css" />
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_list.css" />   
+</head>
+<body>
+    <div class="ui-page">
+        <!-- header -->
+        <div class="ui-header">
+            <div class="ui-title inline"><h5>School Management System</h5></div><div class="refresh-icon inline">
+	        <a onclick="refreshPageContent();"><img alt="icon" src="s40-theme/images/refresh_40x40.png"/></a></div>
+        </div>
+        <div class="ui-content">
+ 			
+		
+		    <div class="ui-tab-control inline">
+			 <div class="ui-tab ui-tab-selected inline" id="tab_1" onclick="mwl.setGroupTarget('#tab_control_content', '#tab_1_content', 'ui-show', 'ui-hide');mwl.switchClass('#tab_1', 'ui-tab-not-selected', 'ui-tab-selected'); mwl.switchClass('#tab_2', 'ui-tab-selected', 'ui-tab-not-selected');mwl.switchClass('#tab_3', 'ui-tab-selected', 'ui-tab-not-selected');">Admission
+			 </div><div class="ui-tab ui-tab-not-selected inline" id="tab_2" onclick="mwl.setGroupTarget('#tab_control_content', '#tab_2_content', 'ui-show', 'ui-hide');mwl.switchClass('#tab_1', 'ui-tab-selected', 'ui-tab-not-selected');mwl.switchClass('#tab_2', 'ui-tab-not-selected', 'ui-tab-selected');mwl.switchClass('#tab_3', 'ui-tab-selected', 'ui-tab-not-selected');">Student
+			 </div><div class="ui-tab ui-tab-not-selected inline" id="tab_3" onclick="mwl.setGroupTarget('#tab_control_content', '#tab_3_content', 'ui-show', 'ui-hide');mwl.switchClass('#tab_1', 'ui-tab-selected', 'ui-tab-not-selected');mwl.switchClass('#tab_2', 'ui-tab-selected', 'ui-tab-not-selected');mwl.switchClass('#tab_3', 'ui-tab-not-selected', 'ui-tab-selected');">Course</div>
+		    </div>
+			<div class="ui-tab-content-row" id="tab_control_content">
+			     <div id="tab_1_content" class="ui-show">
+					<!-- label-with-text-field -->
+                     <div class="ui-fieldset_S40labeledtextfield">
+                      <div class="ui-legend_S40labeledtextfield">First Name:</div>
+                      <input type="text" name="name" class="ui-text-input_S40labeledtextfield"/>
+                      <div class="ui-legend_S40labeledtextfield">Last Name:</div>
+                      <input type="text" name="name" class="ui-text-input_S40labeledtextfield"/>
+                      <div class="ui-legend_S40labeledtextfield">Address:</div>
+                      <input type="text" name="name" class="ui-text-input_S40labeledtextfield"/>
+                      <div class="ui-legend_S40labeledtextfield">Std:</div>
+                      <input type="text" name="name" class="ui-text-input_S40labeledtextfield"/>
+                      <br /><br /><button name="button1" class="ui-button_S40button">Submit</button>
+                    </div>
+				</div>
+			     <div id="tab_2_content" class="ui-hide">
+					<!-- label-with-text-field -->
+                    <div class="ui-fieldset_S40labeledtextfield">
+                     <div class="ui-legend_S40labeledtextfield">User Name:</div>
+                     <input type="text" name="name" class="ui-text-input_S40labeledtextfield"/>
+                     <div class="ui-legend_S40labeledtextfield">Password</div>
+                     <input type="text" name="name" class="ui-text-input_S40labeledtextfield"/>
+                     <button name="submit" class="ui-button_S40button">Enter</button>
+                    </div>
+                    <!-- category-list -->
+					<div class="ui-category-list_S40categorylist">
+						<!-- list-item-1 -->
+						<div class="ui-category-list-item_S40categorylist">
+	    				 <div class="ui-category-list-item-title_S40categorylist ui-open_S40categorylist" id="category_title_1_1" onclick="mwl.toggleClass('#category_items_1_1', 'ui-hide_S40categorylist');mwl.toggleClass('#category_items_1_1', 'ui-show_S40categorylist');mwl.toggleClass('#category_title_1_1', 'ui-open_S40categorylist');mwl.toggleClass('#category_title_1_1', 'ui-close_S40categorylist');">Student Details</div>
+	    				 <div class="ui-category-list-item-body_S40categorylist ui-show_S40categorylist" id="category_items_1_1">
+	    				 <!-- list-items -->
+<div class="ui-list_S40list">
+    <div class="ui-list-item_S40list">Name:Joysankar Sengupta</div>
+    <div class="ui-list-item_S40list">Class:X</div>
+    <div class="ui-list-item_S40list">Roll No:32</div>
+    <div class="ui-list-item_S40list">Attendance:72%</div>
+</div>
+	    				</div>
+						</div>
+	             	<!-- list-item-2 -->
+	               <div class="ui-category-list-item_S40categorylist">
+	               <div class="ui-category-list-item-title_S40categorylist ui-close_S40categorylist" id="category_title_2_1" onclick="mwl.toggleClass('#category_items_2_1', 'ui-show_S40categorylist');mwl.toggleClass('#category_items_2_1', 'ui-hide_S40categorylist');mwl.toggleClass('#category_title_2_1', 'ui-close_S40categorylist');mwl.toggleClass('#category_title_2_1', 'ui-open_S40categorylist');">Result</div>
+                   <div class="ui-category-list-item-body_S40categorylist ui-hide_S40categorylist" id="category_items_2_1">
+        	             <!-- list-items -->
+<div class="ui-list_S40list">
+    <div class="ui-list-item_S40list">Total Marks Obtained:756</div>
+    <div class="ui-list-item_S40list">Division:1st</div>
+    <div class="ui-list-item_S40list">Status:Promoted</div>
+</div>
+                 </div>
+                </div>
+                </div>
+			     </div>
+			     <div id="tab_3_content" class="ui-hide">
+				 <!-- category-list-item -->
+    <div class="ui-category-list-item_S40categorylistitem">
+    <div class="ui-category-list-item-title_S40categorylistitem ui-open_S40categorylistitem" id="category_title_3_2" onclick="mwl.toggleClass('#category_items_3_2', 'ui-hide_S40categorylistitem');mwl.toggleClass('#category_items_3_2', 'ui-show_S40categorylistitem');mwl.toggleClass('#category_title_3_2', 'ui-open_S40categorylistitem');mwl.toggleClass('#category_title_3_2', 'ui-close_S40categorylistitem');">Regular Course</div>
+    <div class="ui-category-list-item-body_S40categorylistitem ui-show_S40categorylistitem" id="category_items_3_2">
+    	<!-- list-items -->
+<div class="ui-list_S40list">
+    <div class="ui-list-item_S40list">Science(Class XI-XII)</div>
+    <div class="ui-list-item_S40list">Arts(Class XI-XII)</div>
+    <div class="ui-list-item_S40list">Class V-X</div>
+</div>
+    </div>
+	</div>
+	<!-- category-list-item -->
+<div class="ui-category-list-item_S40categorylistitem">
+    <div class="ui-category-list-item-title_S40categorylistitem ui-open_S40categorylistitem" id="category_title_3_3" onclick="mwl.toggleClass('#category_items_3_3', 'ui-hide_S40categorylistitem');mwl.toggleClass('#category_items_3_3', 'ui-show_S40categorylistitem');mwl.toggleClass('#category_title_3_3', 'ui-open_S40categorylistitem');mwl.toggleClass('#category_title_3_3', 'ui-close_S40categorylistitem');">Vocational</div>
+    <div class="ui-category-list-item-body_S40categorylistitem ui-show_S40categorylistitem" id="category_items_3_3">
+    	<!-- list-items -->
+<div class="ui-list_S40list">
+    <div class="ui-list-item_S40list">Basic Computer</div>
+    <div class="ui-list-item_S40list">Drawing</div>
+    <div class="ui-list-item_S40list">Others</div>
+</div>
+    </div>
+</div>
+			     </div>
+			   </div> 	
+			</div>
+ 			
+		</div>
+    
+</body>
+</html>

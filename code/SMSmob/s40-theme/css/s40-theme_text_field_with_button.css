@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.ui-button_S40textfieldbutton {
+      background-image: url(../images/title-bar.png);
+      background-repeat: repeat;
+      background-position: left top;
+      height: 35px;
+      padding-right: 8px;
+      padding-left: 8px;
+      color: #FFF;
+      text-decoration: none;
+      margin: 5px;
+	  overflow: hidden;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-top-color: #459c32;
+      border-right-color: #327025;
+      border-bottom-color: #327025;
+      border-left-color: #459c32;
+}
+
+.ui-fixed-40px_S40textfieldbutton{
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	margin-left: 8px;
+	background-image: url(../images/button-bg_40x40.png);
+	background-position: left top;
+	background-repeat: repeat;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #999;
+	font-weight: bold;
+}
+
+.ui-fieldset-text-button_S40textfieldbutton {
+	background-color: #FFF;
+	margin: 8px;
+	padding-left: 8px;
+}
+
+.ui-text-input-with-adj-button_S40textfieldbutton{
+      padding: 0px 4px;
+      background-color: #F8F8F8;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-top-color: #B5B5B5;
+      border-right-color: #E9E9E9;
+      border-bottom-color: #E9E9E9;
+      border-left-color: #B5B5B5;
+}
+
+.header_table_S40textfieldbutton {
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+

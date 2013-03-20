@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+.ui-list_S40list {
+	background-color: #FFF;
+	margin: .1px;
+	padding: .1px;
+	font-size: small;
+}
+
+.ui-list_S40list div.ui-list-item_S40list {
+	height: 30px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #E4E4E4;
+	vertical-align: middle;
+	font-size: medium;
+}
