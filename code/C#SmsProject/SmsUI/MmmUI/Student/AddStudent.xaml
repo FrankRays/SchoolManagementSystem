@@ -16,8 +16,8 @@
     <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <DockPanel LastChildFill="True">
             <UniformGrid DockPanel.Dock="Bottom" Rows="1">
-                <Button Style="{StaticResource MainBtnStyle}" Name="resetAgentInfoBtn">Reset</Button>
-                <Button Style="{StaticResource MainBtnStyle}" Name="agentInfoSubmitBtn">Submit</Button>
+                <Button Style="{StaticResource MainBtnStyle}" Name="resetStudentInfoBtn">Reset</Button>
+                <Button Style="{StaticResource MainBtnStyle}" Name="studentInfoSubmitBtn" Click="studentInfoSubmitBtn_Click">Submit</Button>
             </UniformGrid>
             <UniformGrid Columns="2" DockPanel.Dock="Top">
                 <!--<Label  Style="{StaticResource labelStyle}">Title</Label>
