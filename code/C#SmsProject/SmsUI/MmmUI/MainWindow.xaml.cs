@@ -26,15 +26,7 @@ namespace SMSUI
 
         
 
-        private void loginBtn_Click(object sender, RoutedEventArgs e)
-        {
-            SMSUI.Signin Signinobj = new SMSUI.Signin();
-
-            mainUniGrid.Children.Clear();
-            mainUniGrid.Children.Add(Signinobj);
-
-        }
-
+        
         private void TeacherBtn_Click(object sender, RoutedEventArgs e)
         {
             SMSUI.Teacher Teacherobj = new SMSUI.Teacher();
@@ -97,6 +89,46 @@ namespace SMSUI
 
             mainUniGrid.Children.Clear();
             mainUniGrid.Children.Add(Noticeobj);
+        }
+
+        private void dologinBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (userNameTxtbox.Text.Equals("1") && userNameTxtbox.Text.Equals("1"))
+            {
+                TeacherBtn.IsEnabled = true;
+                StudentsBtn.IsEnabled = true;
+                admissionBtn.IsEnabled = true;
+                AttendanceBtn.IsEnabled = true;
+                settingsBtn.IsEnabled = true;
+                noticeBtn.IsEnabled = true;
+                helpBtn.IsEnabled = true;
+                logoutBtn.Visibility = Visibility.Visible;
+                loginBtn.Visibility = Visibility.Collapsed;
+                SMSUI.Attendance Attendanceobj = new SMSUI.Attendance();
+
+                mainUniGrid.Children.Clear();
+                mainUniGrid.Children.Add(Attendanceobj);
+            }
+            else
+                MessageBox.Show("Enter correct Info");
+
+        }
+
+        private void logoutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            TeacherBtn.IsEnabled = false;
+            StudentsBtn.IsEnabled = false;
+            admissionBtn.IsEnabled = false;
+            AttendanceBtn.IsEnabled = false;
+            settingsBtn.IsEnabled = false;
+            noticeBtn.IsEnabled = false;
+            helpBtn.IsEnabled = false;
+            loginBtn.Visibility = Visibility.Visible;
+            logoutBtn.Visibility = Visibility.Collapsed;
+
+            mainUniGrid.Children.Clear();
+            mainUniGrid.Children.Add(loginDP);
         }
     }
 }

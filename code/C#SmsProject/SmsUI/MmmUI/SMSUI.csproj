@@ -85,9 +85,6 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Signin.xaml.cs">
-      <DependentUpon>Signin.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Student\ViewStudent.xaml.cs">
       <DependentUpon>ViewStudent.xaml</DependentUpon>
     </Compile>
@@ -146,10 +143,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Settings.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Signin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

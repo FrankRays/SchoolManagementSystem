@@ -13,19 +13,45 @@
        
         <Image DockPanel.Dock="Top" Name="companyNameImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmUI;component/Images/name.jpg" />
         <UniformGrid Width="300" DockPanel.Dock="Left" Columns="1">
-            <Button Content="Sign In" Name="loginBtn" Style="{StaticResource MainBtnStyle}"  Click="loginBtn_Click" ></Button>
-            <Button Content="Teachers" Name="TeacherBtn" Style="{StaticResource MainBtnStyle}"  Click="TeacherBtn_Click"></Button>
-            <Button Content="Students" Name="StudentsBtn" Style="{StaticResource MainBtnStyle}"  Click="StudentsBtn_Click"></Button>
-            <Button Content="Admission" Name="admissionBtn" Style="{StaticResource MainBtnStyle}" Click="admissionBtn_Click" ></Button>
-            <Button   Content="Attendance"  Name="AttendanceBtn"  Style="{StaticResource MainBtnStyle}" Click="Attendance_Click" ></Button>
-            <Button Content="Settings" Name="settingsBtn" Style="{StaticResource MainBtnStyle}"  Click="settingsBtn_Click"></Button>
-            <Button Content="Notice" Name="noticeBtn" Style="{StaticResource MainBtnStyle}" Click="noticeBtn_Click"></Button>
-            <Button Content="Help" Name="helpBtn" Style="{StaticResource MainBtnStyle}"  Click="helpBtn_Click"></Button>
-            <Button Content="Close" Name="closeBtn" Style="{StaticResource MainBtnStyle}"  Click="closeBtn_Click" ></Button>
+            <Button Content="Sign In" Name="loginBtn" Style="{StaticResource MainBtnStyle}"  ></Button>
+            
+            <Button Content="Teachers" Name="TeacherBtn" Style="{StaticResource MainBtnStyle}"  Click="TeacherBtn_Click" IsEnabled="False"></Button>
+            <Button Content="Students" Name="StudentsBtn" Style="{StaticResource MainBtnStyle}"  Click="StudentsBtn_Click" IsEnabled="False"></Button>
+            <Button Content="Admission" Name="admissionBtn" Style="{StaticResource MainBtnStyle}" Click="admissionBtn_Click" IsEnabled="False"></Button>
+            <Button   Content="Attendance"  Name="AttendanceBtn"  Style="{StaticResource MainBtnStyle}" Click="Attendance_Click" IsEnabled="False"></Button>
+            <Button Content="Settings" Name="settingsBtn" Style="{StaticResource MainBtnStyle}"  Click="settingsBtn_Click" IsEnabled="False"></Button>
+            <Button Content="Notice" Name="noticeBtn" Style="{StaticResource MainBtnStyle}" Click="noticeBtn_Click" IsEnabled="False"></Button>
+            <Button Content="Help" Name="helpBtn" Style="{StaticResource MainBtnStyle}"  Click="helpBtn_Click" IsEnabled="False"></Button>
+            <Button Content="Sign Out" Name="logoutBtn" Style="{StaticResource MainBtnStyle}" Visibility="Collapsed" Click="logoutBtn_Click"></Button>
         </UniformGrid>
         <UniformGrid DockPanel.Dock="Right" Name="mainUniGrid">
-            <my:Signin />
-            
+            <DockPanel LastChildFill="True" Name="loginDP">
+                <Image DockPanel.Dock="Top" Name="schoolImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmUI;component/Images/banner1.jpg" Height="340" Width="1000"/>
+                <UniformGrid DockPanel.Dock="Bottom" Columns="4">
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}" >User Name</Label>
+                    <TextBox Height="40"  Name="userNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                    <Label></Label>
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}" >User Type</Label>
+                    <ComboBox Height="40" Name="userTypeCombobox" IsEditable="True" SelectedIndex="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" >
+
+                        <ComboBoxItem>Admin</ComboBoxItem>
+                        <ComboBoxItem>Faculty</ComboBoxItem>
+                        <ComboBoxItem>Stuff</ComboBoxItem>
+                    </ComboBox>
+                    <Label></Label>
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}">Enter Password</Label>
+                    <PasswordBox Height="40" Name="passwordBox" Style="{StaticResource passwordboxStyle}"></PasswordBox>
+                    <Label></Label>
+                    <Label></Label>
+                    <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="2">Reset</Button>
+                    <Button Name="dologinBtn" Style="{StaticResource MainBtnStyle}" Margin="2" Click="dologinBtn_Click">Sign In</Button>
+
+                </UniformGrid>
+            </DockPanel>
+
         </UniformGrid>
         <!--<TabControl Name="controlsTab" DockPanel.Dock="Bottom" TabStripPlacement="Bottom" Background="#37000000" >
             <TabItem Name="homeTab" >
