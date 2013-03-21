@@ -26,19 +26,304 @@ public class FacultyWindow extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        facultynameTxt = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        facultyIDTxt = new javax.swing.JTextField();
+        facultyaddressTxt = new javax.swing.JTextField();
+        facultyjoinTxt = new javax.swing.JTextField();
+        facultycontactTxt = new javax.swing.JTextField();
+        facultycourseCombobox = new javax.swing.JComboBox();
+        facultysalaryCombobox = new javax.swing.JComboBox();
+        facultytypeCombobox = new javax.swing.JComboBox();
+        submitBtn = new javax.swing.JButton();
+        CancelBtn = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(0, 204, 204));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Faculty"));
+        setForeground(new java.awt.Color(51, 51, 255));
+        setToolTipText("");
+        setMaximumSize(new java.awt.Dimension(600, 500));
+        setMinimumSize(new java.awt.Dimension(600, 500));
+        setPreferredSize(new java.awt.Dimension(600, 500));
+
+        jLabel1.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/14904095-male-student-with-a-teacher-in-classroom.jpg"))); // NOI18N
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel1.setMaximumSize(new java.awt.Dimension(300, 40));
+        jLabel1.setMinimumSize(new java.awt.Dimension(300, 40));
+        jLabel1.setPreferredSize(new java.awt.Dimension(300, 40));
+
+        jLabel2.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Faculty ID");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel2.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel2.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel2.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel2.setVerifyInputWhenFocusTarget(false);
+
+        jLabel3.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Faculty Name");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel3.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel3.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel3.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel3.setVerifyInputWhenFocusTarget(false);
+
+        jLabel4.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Faculty Address");
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel4.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel4.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel4.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel4.setVerifyInputWhenFocusTarget(false);
+
+        jLabel5.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Faculty Join Date");
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel5.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel5.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel5.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel5.setVerifyInputWhenFocusTarget(false);
+
+        jLabel6.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Faculty Course Under");
+        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel6.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel6.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel6.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel6.setVerifyInputWhenFocusTarget(false);
+
+        jLabel7.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Faculty Contact No.");
+        jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel7.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel7.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel7.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel7.setVerifyInputWhenFocusTarget(false);
+
+        jLabel8.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Faculty Salary");
+        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel8.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel8.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel8.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel8.setVerifyInputWhenFocusTarget(false);
+
+        facultynameTxt.setBackground(new java.awt.Color(0, 204, 204));
+        facultynameTxt.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        facultynameTxt.setForeground(new java.awt.Color(162, 103, 195));
+        facultynameTxt.setMaximumSize(new java.awt.Dimension(250, 40));
+        facultynameTxt.setMinimumSize(new java.awt.Dimension(250, 40));
+        facultynameTxt.setPreferredSize(new java.awt.Dimension(250, 40));
+
+        jLabel9.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Faculty Type");
+        jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel9.setMaximumSize(new java.awt.Dimension(250, 40));
+        jLabel9.setMinimumSize(new java.awt.Dimension(250, 40));
+        jLabel9.setPreferredSize(new java.awt.Dimension(250, 40));
+        jLabel9.setVerifyInputWhenFocusTarget(false);
+
+        facultyIDTxt.setBackground(new java.awt.Color(0, 204, 204));
+        facultyIDTxt.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        facultyIDTxt.setForeground(new java.awt.Color(162, 103, 195));
+        facultyIDTxt.setMaximumSize(new java.awt.Dimension(250, 40));
+        facultyIDTxt.setMinimumSize(new java.awt.Dimension(250, 40));
+        facultyIDTxt.setPreferredSize(new java.awt.Dimension(250, 40));
+
+        facultyaddressTxt.setBackground(new java.awt.Color(0, 204, 204));
+        facultyaddressTxt.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        facultyaddressTxt.setForeground(new java.awt.Color(162, 103, 195));
+        facultyaddressTxt.setMaximumSize(new java.awt.Dimension(250, 40));
+        facultyaddressTxt.setMinimumSize(new java.awt.Dimension(250, 40));
+        facultyaddressTxt.setPreferredSize(new java.awt.Dimension(250, 40));
+
+        facultyjoinTxt.setBackground(new java.awt.Color(0, 204, 204));
+        facultyjoinTxt.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        facultyjoinTxt.setForeground(new java.awt.Color(162, 103, 195));
+        facultyjoinTxt.setMaximumSize(new java.awt.Dimension(250, 40));
+        facultyjoinTxt.setMinimumSize(new java.awt.Dimension(250, 40));
+        facultyjoinTxt.setPreferredSize(new java.awt.Dimension(250, 40));
+
+        facultycontactTxt.setBackground(new java.awt.Color(0, 204, 204));
+        facultycontactTxt.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        facultycontactTxt.setForeground(new java.awt.Color(162, 103, 195));
+        facultycontactTxt.setMaximumSize(new java.awt.Dimension(250, 40));
+        facultycontactTxt.setMinimumSize(new java.awt.Dimension(250, 40));
+        facultycontactTxt.setPreferredSize(new java.awt.Dimension(250, 40));
+
+        facultycourseCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Computer Application", "Computer Science" }));
+
+        facultysalaryCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "40,000", "60,000" }));
+
+        facultytypeCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Full Time", "Part Time" }));
+        facultytypeCombobox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                facultytypeComboboxActionPerformed(evt);
+            }
+        });
+
+        submitBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitBtn.setForeground(new java.awt.Color(102, 102, 102));
+        submitBtn.setText("Submit");
+        submitBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 204, 204)));
+
+        CancelBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        CancelBtn.setForeground(new java.awt.Color(102, 102, 102));
+        CancelBtn.setText("Cancel");
+        CancelBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 204, 204)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(CancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(facultysalaryCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(facultytypeCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(facultynameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addComponent(facultyIDTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(facultyaddressTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(facultyjoinTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(facultycontactTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(facultycourseCombobox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addContainerGap(40, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(facultyIDTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(1, 1, 1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(facultynameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(2, 2, 2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(facultyaddressTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(facultyjoinTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(facultycourseCombobox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(facultycontactTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(facultysalaryCombobox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(facultytypeCombobox, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void facultytypeComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facultytypeComboboxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_facultytypeComboboxActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CancelBtn;
+    private javax.swing.JTextField facultyIDTxt;
+    private javax.swing.JTextField facultyaddressTxt;
+    private javax.swing.JTextField facultycontactTxt;
+    private javax.swing.JComboBox facultycourseCombobox;
+    private javax.swing.JTextField facultyjoinTxt;
+    private javax.swing.JTextField facultynameTxt;
+    private javax.swing.JComboBox facultysalaryCombobox;
+    private javax.swing.JComboBox facultytypeCombobox;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton submitBtn;
     // End of variables declaration//GEN-END:variables
 }
