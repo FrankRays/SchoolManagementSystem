@@ -23,5 +23,30 @@ namespace SMSUI
         {
             InitializeComponent();
         }
+
+        private void submitadmisionBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SmsData.AdmissionInfo newAdmission = new SmsData.AdmissionInfo();
+
+            newAdmission.id = GenerateId();
+            newAdmission.name = nameTxtbox.Text;
+            newAdmission.grdain = GuardianNameTxtbox.Text;
+            newAdmission.address = studentAddressTxtbox.Text;
+            newAdmission.phone = PhoneNumberTxtbox.Text;
+            newAdmission.applyfor = applyForTxtbox.Text;
+            newAdmission.qualification = QualificationTxtbox.Text;
+            newAdmission.marksprcntg = prcntMarksTxtbox.Text;
+            newAdmission.formNo = formNoTxtbox.Text;
+
+            
+
+            SmsDb.DbInteraction.RegisterNewAdmissionForm(newAdmission);
+            
+        }
+        private string GenerateId()
+        {
+            return DateTime.Now.ToOADate().ToString();
+        }
+        
     }
 }

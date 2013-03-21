@@ -16,7 +16,7 @@
         <DockPanel  LastChildFill="True">
             <UniformGrid DockPanel.Dock="Bottom" Rows="1">
                 <Button Style="{StaticResource MainBtnStyle}" Name="resetClientInfoBtn">Reset</Button>
-                <Button Style="{StaticResource MainBtnStyle}" Name="clientInfoSubmitBtn">Submit</Button>
+                <Button Name="submitadmisionBtn" Style="{StaticResource MainBtnStyle}" Click="submitadmisionBtn_Click">Submit</Button>
             </UniformGrid>
             <UniformGrid Columns="2" DockPanel.Dock="top">
                 <!--<Label  Style="{StaticResource labelStyle}">Title</Label>
@@ -27,18 +27,20 @@
                 </ComboBox>-->
                 <Label  Style="{StaticResource labelStyle}">Name</Label>
                 <TextBox  Name="nameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
-                
+                <Label Style="{StaticResource labelStyle}">Guardian Name</Label>
+                <TextBox  Name="GuardianNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Address</Label>
-                <TextBox  Name="clientAddressTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <TextBox  Name="studentAddressTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Phone Number</Label>
-                <TextBox  Name="clientPhoneNumberTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <TextBox  Name="PhoneNumberTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Apply For</Label>
                 <TextBox  Name="applyForTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Qualification</Label>
                 <TextBox  Name="QualificationTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Percentage of Marks</Label>
                 <TextBox  Name="prcntMarksTxtbox" Style="{StaticResource textboxStyle}"></TextBox>
-                
+                <Label Style="{StaticResource labelStyle}">Form  Number</Label>
+                <TextBox  Name="formNoTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
             </UniformGrid>
         </DockPanel>
     </ScrollViewer>
