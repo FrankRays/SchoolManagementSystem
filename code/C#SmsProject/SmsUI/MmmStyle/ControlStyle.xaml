@@ -100,7 +100,7 @@
         <Setter Property="Margin" Value="10"/>
     </Style>
     <Style x:Key="usrecntrl" TargetType="UserControl">
-        <Setter Property="Background" Value="#FFC999D1" />
+        <Setter Property="Background" Value="#FFC08E5D" /> 
         
     </Style>
 

@@ -24,7 +24,7 @@
             <Button Content="Help" Name="helpBtn" Style="{StaticResource MainBtnStyle}"  Click="helpBtn_Click" IsEnabled="False"></Button>
             <Button Content="Sign Out" Name="logoutBtn" Style="{StaticResource MainBtnStyle}" Visibility="Collapsed" Click="logoutBtn_Click"></Button>
         </UniformGrid>
-        <UniformGrid DockPanel.Dock="Right" Name="mainUniGrid">
+        <UniformGrid DockPanel.Dock="Right" Name="mainUniGrid" Background="#FFC08E5D">
             <DockPanel LastChildFill="True" Name="loginDP">
                 <Image DockPanel.Dock="Top" Name="schoolImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmUI;component/Images/banner1.jpg" Height="340" Width="1000"/>
                 <UniformGrid DockPanel.Dock="Bottom" Columns="4">

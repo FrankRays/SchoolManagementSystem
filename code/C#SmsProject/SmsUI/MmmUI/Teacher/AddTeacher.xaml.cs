@@ -23,5 +23,30 @@ namespace SMSUI
         {
             InitializeComponent();
         }
+
+        private void employeeInfoSubmitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SmsData.TeacherInfo newTeacher = new SmsData.TeacherInfo();
+
+            newTeacher.id = GenerateId();
+            newTeacher.name = teacherNameTxtbox.Text;
+            newTeacher.join = teacherJoinDatePicker.SelectedDate.Value;
+            newTeacher.tdob = teacherDobDatepicker.SelectedDate.Value;
+            newTeacher.address = teacherAddressTxtbox.Text;
+            newTeacher.phone = teacherPhoneNumberTxtbox.Text;
+            newTeacher.email = teacherEmailTxtbox.Text;
+            newTeacher.jobId = teacherjobIdTxtbox.Text;
+            newTeacher.faculty = teacherFacultyTxtbox.Text;
+            newTeacher.salary = teacherSalaryTxtbox.Text;
+
+
+
+            SmsDb.DbInteraction.RegisterNewTeacher(newTeacher);
+
+        }
+        private string GenerateId()
+        {
+            return DateTime.Now.ToOADate().ToString();
+        }
     }
 }

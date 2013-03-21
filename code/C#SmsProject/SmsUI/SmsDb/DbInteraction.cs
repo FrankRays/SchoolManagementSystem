@@ -116,6 +116,53 @@ namespace SmsDb
         }
 
         #endregion
+
+        #region Teacher
+
+        public static int RegisterNewTeacher(TeacherInfo NewTeacher)
+        {
+            int returnVal = 0;
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+
+                //define the connection used by the command object
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "INSERT INTO teacher(id,name,join,tdob,address,phone,email,jobId,faculty,salary) " +
+                                    "VALUES(@id,@name,@join,@tdob,@address,@phone,@email,@jobId,@faculty,@salary)";
+
+                msqlCommand.Parameters.AddWithValue("@id", NewTeacher.id);
+                msqlCommand.Parameters.AddWithValue("@name", NewTeacher.name);
+                msqlCommand.Parameters.AddWithValue("@join", NewTeacher.join);
+                msqlCommand.Parameters.AddWithValue("@tdob", NewTeacher.tdob);
+                msqlCommand.Parameters.AddWithValue("@address", NewTeacher.address);
+                msqlCommand.Parameters.AddWithValue("@phone", NewTeacher.phone);
+                msqlCommand.Parameters.AddWithValue("@email", NewTeacher.email);
+                msqlCommand.Parameters.AddWithValue("@jobId", NewTeacher.jobId);
+                msqlCommand.Parameters.AddWithValue("@faculty", NewTeacher.faculty);
+                msqlCommand.Parameters.AddWithValue("@salary", NewTeacher.salary);
+
+                msqlCommand.ExecuteNonQuery();
+
+                returnVal = 1;
+            }
+            catch (Exception er)
+            {
+                returnVal = 0;
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+            return returnVal;
+        }
+
+        #endregion
       
     }
 }

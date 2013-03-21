@@ -16,7 +16,7 @@
         <DockPanel LastChildFill="True">
             <UniformGrid DockPanel.Dock="Bottom" Rows="1">
                 <Button Style="{StaticResource MainBtnStyle}" Name="resetEmployeeInfoBtn">Reset</Button>
-                <Button Style="{StaticResource MainBtnStyle}" Name="employeeInfoSubmitBtn">Submit</Button>
+                <Button Style="{StaticResource MainBtnStyle}" Name="employeeInfoSubmitBtn" Click="employeeInfoSubmitBtn_Click">Submit</Button>
             </UniformGrid>
             <UniformGrid Columns="2" DockPanel.Dock="Top">
                 <!--<Label  Style="{StaticResource labelStyle}">Title</Label>
@@ -38,7 +38,7 @@
                 <Label Style="{StaticResource labelStyle}">E Mail Address</Label>
                 <TextBox  Name="teacherEmailTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label  Style="{StaticResource labelStyle}">Teacher's Job Id</Label>
-                <TextBox  Name="teacherjobIdTxtbox" IsReadOnly="True"  Style="{StaticResource textboxStyle}"></TextBox>
+                <TextBox  Name="teacherjobIdTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Faculty For</Label>
                 <TextBox  Name="teacherFacultyTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Pay Scale</Label>
