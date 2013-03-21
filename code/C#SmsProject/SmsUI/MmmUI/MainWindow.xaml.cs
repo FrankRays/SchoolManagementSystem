@@ -109,6 +109,8 @@ namespace SMSUI
 
                 mainUniGrid.Children.Clear();
                 mainUniGrid.Children.Add(Attendanceobj);
+                userNameTxtbox.Text = "";
+                userNameTxtbox.Text ="";
             }
             else
                 MessageBox.Show("Enter correct Info");
