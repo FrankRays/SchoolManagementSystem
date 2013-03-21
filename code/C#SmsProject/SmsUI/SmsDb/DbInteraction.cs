@@ -119,11 +119,16 @@ namespace SmsDb
 
         #region Teacher
 
+        
         public static int RegisterNewTeacher(TeacherInfo NewTeacher)
+        {
+            return DoRegisterNewTeacherindb(NewTeacher);
+        }
+
+        private static int DoRegisterNewTeacherindb(TeacherInfo NewTeacher)
         {
             int returnVal = 0;
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
-
             try
             {
                 //define the command reference
