@@ -195,6 +195,10 @@
       <Project>{C8D55DDA-FBC6-48FA-A744-47FD927E2D1A}</Project>
       <Name>SmsDb</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SmsStyle\SmsStyle.csproj">
+      <Project>{A866A332-2F75-4AC4-98F6-46FC1DCB9568}</Project>
+      <Name>SmsStyle</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\banner1.jpg" />

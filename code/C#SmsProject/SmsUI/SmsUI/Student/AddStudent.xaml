@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib" 
              mc:Ignorable="d" 
              d:DesignHeight="412" d:DesignWidth="334" Style="{DynamicResource usrecntrl}">
 
@@ -36,7 +37,7 @@
                 <Label Style="{StaticResource labelStyle}">Phone Number</Label>
                 <TextBox  Name="phoneNoTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Date of Birth</Label>
-                <DatePicker  Name="dobDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <DatePicker  Name="dobDatepicker" SelectedDate="{x:Static sys:DateTime.Now}" Style="{StaticResource datePickerStyle}"></DatePicker>
                 <Label Style="{StaticResource labelStyle}">Blood Group</Label>
                 <TextBox  Name="bloodGroupTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 

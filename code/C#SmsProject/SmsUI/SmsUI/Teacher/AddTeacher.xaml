@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib" 
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource usrecntrl}">
     <UserControl.Resources>
@@ -28,9 +29,9 @@
                 <Label  Style="{StaticResource labelStyle}">Teacher Name</Label>
                 <TextBox  Name="teacherNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label  Style="{StaticResource labelStyle}">Join date</Label>
-                <DatePicker Name="teacherJoinDatePicker" Style="{StaticResource datePickerStyle}"></DatePicker>
+                <DatePicker Name="teacherJoinDatePicker" Style="{StaticResource datePickerStyle}" SelectedDate="{x:Static sys:DateTime.Now}" ></DatePicker>
                 <Label Style="{StaticResource labelStyle}">Date of Birth</Label>
-                <DatePicker  Name="teacherDobDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <DatePicker  Name="teacherDobDatepicker"  Style="{StaticResource datePickerStyle}" SelectedDate="{x:Static sys:DateTime.Now}" ></DatePicker>
                 <Label Style="{StaticResource labelStyle}">Address</Label>
                 <TextBox  Name="teacherAddressTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
                 <Label Style="{StaticResource labelStyle}">Phone Number</Label>
