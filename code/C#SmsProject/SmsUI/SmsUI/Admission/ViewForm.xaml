@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource usrecntrl}">
     <UserControl.Resources>
@@ -14,17 +15,19 @@
     </UserControl.Resources>
     <DockPanel>
         <UniformGrid>
-            <ListView Name="passView" HorizontalAlignment="Stretch">
+            <ListView Name="passView" HorizontalAlignment="Stretch" ItemsSource="{Binding allAdmissionFormCollection}" Loaded="Window_Loaded" >
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Width="100" Header="ID"   />
-                        <GridViewColumn Width="100" Header="Name" />
-                        <GridViewColumn Width="150" Header="Address"  />
-                        <GridViewColumn Width="100" Header="Phone Number"   />
+                        <GridViewColumn Width="100" Header="ID"  DisplayMemberBinding="{Binding id}" />
+                        <GridViewColumn Width="100" Header="Name" DisplayMemberBinding="{Binding name}"/>
+                        <GridViewColumn Width="100" Header="Guardian" DisplayMemberBinding="{Binding grdain}"/>
+                        <GridViewColumn Width="150" Header="Address" DisplayMemberBinding="{Binding address}" />
+                        <GridViewColumn Width="100" Header="Phone Number"  DisplayMemberBinding="{Binding phone}" />
 
-                        <GridViewColumn Width="150" Header="Apply For"   />
-                        <GridViewColumn Width="300" Header="Qualification"   />
-                        <GridViewColumn Width="100" Header="Percentage of Marks"   />
+                        <GridViewColumn Width="150" Header="Apply For"  DisplayMemberBinding="{Binding applyfor}" />
+                        <GridViewColumn Width="300" Header="Qualification"  DisplayMemberBinding="{Binding qualification}" />
+                        <GridViewColumn Width="100" Header="Percentage of Marks" DisplayMemberBinding="{Binding marksprcntg}"  />
+                        <GridViewColumn Width="150" Header="Form No."  DisplayMemberBinding="{Binding formNo}" />
                     </GridView>
                 </ListView.View>
             </ListView>

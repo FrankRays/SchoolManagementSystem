@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource usrecntrl}">
     <UserControl.Resources>
@@ -15,20 +16,22 @@
     <DockPanel>
         <UniformGrid>
 
-            <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+            <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allTeacherCollection}" Loaded="Window_Loaded">
                 
     
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Width="100" Header="Name" />
-                        <GridViewColumn Width="100" Header="Join date" />
-                        <GridViewColumn Width="100" Header="Date of Birth" />
-                        <GridViewColumn Width="100" Header="Address" />
-                        <GridViewColumn Width="100" Header="Phone Number" />
-                        <GridViewColumn Width="100" Header="E Mail Address" />
-                        <GridViewColumn Width="100" Header="Teacher's Job Id" />
-                        <GridViewColumn Width="100" Header="Faculty For" />
-                        <GridViewColumn Width="100" Header="Pay Scale" />
+                        <GridViewColumn Width="100" Header="Name" DisplayMemberBinding="{Binding name}"/>
+                        <GridViewColumn Width="100" Header="Join date" DisplayMemberBinding="{Binding joinDate}"/>
+                        <GridViewColumn Width="100" Header="Date of Birth" DisplayMemberBinding="{Binding tdob}"/>
+                        <GridViewColumn Width="100" Header="Address" DisplayMemberBinding="{Binding address}"/>
+                        <GridViewColumn Width="100" Header="Phone Number" DisplayMemberBinding="{Binding phone}"/>
+                        <GridViewColumn Width="100" Header="EMail Address" DisplayMemberBinding="{Binding email}"/>
+                        <GridViewColumn Width="100" Header="Teacher's Job Id" DisplayMemberBinding="{Binding jobId}"/>
+                        <GridViewColumn Width="100" Header="Faculty For" DisplayMemberBinding="{Binding faculty}"/>
+                        <GridViewColumn Width="100" Header="Pay Scale" DisplayMemberBinding="{Binding salary}"/>
+
+
                     </GridView>
                 </ListView.View>
             </ListView>

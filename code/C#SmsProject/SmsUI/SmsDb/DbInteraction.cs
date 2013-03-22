@@ -69,6 +69,56 @@ namespace SmsDb
             return returnVal;
         }
 
+        public static List<StudentInfo> GetAllStudentList()
+        {
+            return QueryAllStudentList();
+        }
+        private static List<StudentInfo> QueryAllStudentList()
+        {
+            List<StudentInfo> StudentList = new List<StudentInfo>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From student ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    StudentInfo Student = new StudentInfo();
+
+                    Student.id = msqlReader.GetString("id");
+                    Student.name = msqlReader.GetString("name");
+                    Student.gurdain = msqlReader.GetString("guardian");
+                    Student.address = msqlReader.GetString("address");
+                    Student.phone = msqlReader.GetString("phone");
+                    Student.dob = msqlReader.GetDateTime("dob");
+                    Student.blodGroup = msqlReader.GetString("bloodGroup");
+                    Student.joinClass = msqlReader.GetString("joinClass");
+                    Student.schoolFrom = msqlReader.GetString("schoolFrom");
+                    Student.joinDate = msqlReader.GetDateTime("joinDate");
+
+
+                    StudentList.Add(Student);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return StudentList;
+        }
+
         #endregion
 
         #region Admission
@@ -119,6 +169,54 @@ namespace SmsDb
                 msqlConnection.Close();
             }
             return returnVal;
+        }
+
+        public static List<AdmissionInfo> GetAllAdmissionList()
+        {
+            return QueryAllAdmissionListinDb();
+        }
+        private static List<AdmissionInfo> QueryAllAdmissionListinDb()
+        {
+            List<AdmissionInfo> AdmissionList = new List<AdmissionInfo>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From admission ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    AdmissionInfo Admission = new AdmissionInfo();
+
+                    Admission.id = msqlReader.GetString("id");
+                    Admission.name = msqlReader.GetString("name");
+                    Admission.grdain = msqlReader.GetString("gurdian");
+                    Admission.address = msqlReader.GetString("address");
+                    Admission.phone = msqlReader.GetString("phone");
+                    Admission.applyfor = msqlReader.GetString("applyfor");
+                    Admission.qualification = msqlReader.GetString("qualification");
+                    Admission.marksprcntg = msqlReader.GetString("marksprcntg");
+                    Admission.formNo = msqlReader.GetString("formNo");
+
+                    AdmissionList.Add(Admission);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return AdmissionList;
         }
 
         #endregion
@@ -176,6 +274,58 @@ namespace SmsDb
             }
             return returnVal;
         }
+
+
+        public static List<TeacherInfo> GetAllResidenceList()
+        {
+            return QueryAllTeacherList();
+        }
+        private static List<TeacherInfo> QueryAllTeacherList()
+        {
+            List<TeacherInfo> TeacherList = new List<TeacherInfo>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From teacher ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    TeacherInfo Teacher = new TeacherInfo();
+
+                    Teacher.id = msqlReader.GetString("id");
+                    Teacher.name = msqlReader.GetString("name");
+                    Teacher.joinDate = msqlReader.GetDateTime("joinDate");
+                    Teacher.tdob = msqlReader.GetDateTime("tdob");
+                    Teacher.address = msqlReader.GetString("address");
+                    Teacher.phone = msqlReader.GetString("phone");
+                    Teacher.email = msqlReader.GetString("email");
+                    Teacher.jobId = msqlReader.GetString("jobId");
+                    Teacher.faculty = msqlReader.GetString("faculty");
+                    Teacher.salary = msqlReader.GetString("salary");
+
+
+                    TeacherList.Add(Teacher);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return TeacherList;
+        }
+
 
         #endregion
       
