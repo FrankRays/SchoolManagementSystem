@@ -143,8 +143,8 @@ namespace SmsDb
                 //define the connection used by the command object
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "INSERT INTO teacher(id,name,join,tdob,address,phone,email,jobId,faculty,salary) " +
-                                    "VALUES(@id,@name,@join,@tdob,@address,@phone,@email,@jobId,@faculty,@salary)";
+                msqlCommand.CommandText = "INSERT INTO teacher(id,name,joinDate,tdob,address,phone,email,jobId,faculty,salary) " +
+                                    "VALUES(@id,@name,@joinDate,@tdob,@address,@phone,@email,@jobId,@faculty,@salary)";
 
                 //msqlCommand.CommandText = "INSERT INTO teacher(id,name,guardian,address,phone,dob,bloodGroup,joinClass,schoolFrom,joinDate) " +
                 //                   "VALUES(@id,@name,@guardian,@address,@phone,@dob,@bloodGroup,@joinClass,@schoolFrom,@joinDate)";
@@ -152,7 +152,7 @@ namespace SmsDb
 
                 msqlCommand.Parameters.AddWithValue("@id", NewTeacher.id);
                 msqlCommand.Parameters.AddWithValue("@name", NewTeacher.name);
-                msqlCommand.Parameters.AddWithValue("@join", NewTeacher.join);
+                msqlCommand.Parameters.AddWithValue("@joinDate", NewTeacher.joinDate);
                 msqlCommand.Parameters.AddWithValue("@tdob", NewTeacher.tdob);
                 msqlCommand.Parameters.AddWithValue("@address", NewTeacher.address);
                 msqlCommand.Parameters.AddWithValue("@phone", NewTeacher.phone);

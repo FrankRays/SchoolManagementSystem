@@ -9,7 +9,7 @@ namespace SmsData
     {
         public string id { get; set; }
         public string name { get; set; }
-        public DateTime join { get; set; }
+        public DateTime joinDate { get; set; }
         public DateTime tdob { get; set; }
         public string address { get; set; }
         public string phone { get; set; }

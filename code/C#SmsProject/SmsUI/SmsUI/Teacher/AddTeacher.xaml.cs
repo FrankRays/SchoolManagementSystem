@@ -30,7 +30,7 @@ namespace SMSUI
 
             newTeacher.id = GenerateId();
             newTeacher.name = teacherNameTxtbox.Text;
-            newTeacher.join = teacherJoinDatePicker.SelectedDate.Value;
+            newTeacher.joinDate = teacherJoinDatePicker.SelectedDate.Value;
             newTeacher.tdob = teacherDobDatepicker.SelectedDate.Value;
             newTeacher.address = teacherAddressTxtbox.Text;
             newTeacher.phone = teacherPhoneNumberTxtbox.Text;
