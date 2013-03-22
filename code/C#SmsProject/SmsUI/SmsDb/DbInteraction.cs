@@ -146,6 +146,10 @@ namespace SmsDb
                 msqlCommand.CommandText = "INSERT INTO teacher(id,name,join,tdob,address,phone,email,jobId,faculty,salary) " +
                                     "VALUES(@id,@name,@join,@tdob,@address,@phone,@email,@jobId,@faculty,@salary)";
 
+                //msqlCommand.CommandText = "INSERT INTO teacher(id,name,guardian,address,phone,dob,bloodGroup,joinClass,schoolFrom,joinDate) " +
+                //                   "VALUES(@id,@name,@guardian,@address,@phone,@dob,@bloodGroup,@joinClass,@schoolFrom,@joinDate)";
+
+
                 msqlCommand.Parameters.AddWithValue("@id", NewTeacher.id);
                 msqlCommand.Parameters.AddWithValue("@name", NewTeacher.name);
                 msqlCommand.Parameters.AddWithValue("@join", NewTeacher.join);

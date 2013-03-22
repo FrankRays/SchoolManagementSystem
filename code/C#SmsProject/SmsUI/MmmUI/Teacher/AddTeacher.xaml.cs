@@ -24,7 +24,7 @@ namespace SMSUI
             InitializeComponent();
         }
 
-        private void employeeInfoSubmitBtn_Click(object sender, RoutedEventArgs e)
+        private void teacherInfoSubmitBtn_Click(object sender, RoutedEventArgs e)
         {
             SmsData.TeacherInfo newTeacher = new SmsData.TeacherInfo();
 
