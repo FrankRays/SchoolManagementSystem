@@ -187,10 +187,6 @@
     <Resource Include="Images\name.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MmmStyle\SmsStyle.csproj">
-      <Project>{A866A332-2F75-4AC4-98F6-46FC1DCB9568}</Project>
-      <Name>SmsStyle</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SmsData\SmsData.csproj">
       <Project>{6B417D88-0291-4D6B-A344-70A276A904D6}</Project>
       <Name>SmsData</Name>
