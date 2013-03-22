@@ -40,9 +40,9 @@ namespace SMSUI
             newAdmission.marksprcntg = prcntMarksTxtbox.Text;
             newAdmission.formNo = formNoTxtbox.Text;
 
-            
 
-            SmsDb.DbInteraction.RegisterNewAdmissionForm(newAdmission);
+
+            SmsDb.DbInteraction.RegisterNewAdmission(newAdmission);
             
         }
         private string GenerateId()

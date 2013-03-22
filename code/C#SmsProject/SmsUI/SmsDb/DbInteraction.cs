@@ -73,6 +73,12 @@ namespace SmsDb
 
         #region Admission
 
+        public static int RegisterNewAdmission(AdmissionInfo NewAdmissionForm)
+        {
+            return RegisterNewAdmissionForm(NewAdmissionForm);
+        }
+
+
         public static int RegisterNewAdmissionForm(AdmissionInfo NewAdmissionForm)
         {
             int returnVal = 0;
@@ -86,12 +92,12 @@ namespace SmsDb
                 //define the connection used by the command object
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "INSERT INTO admission(id,name,grdain,address,phone,applyfor,qualification,marksprcntg,formNo) " +
-                                                         "VALUES(@id,@name,@grdain,@address,@phone,@applyfor,@qualification,@marksprcntg,@formNo)";
+                msqlCommand.CommandText = "INSERT INTO admission(id,name,gurdian,address,phone,applyfor,qualification,marksprcntg,formNo) " +
+                                                         "VALUES(@id,@name,@gurdian,@address,@phone,@applyfor,@qualification,@marksprcntg,@formNo)";
 
                 msqlCommand.Parameters.AddWithValue("@id", NewAdmissionForm.id);
                 msqlCommand.Parameters.AddWithValue("@name", NewAdmissionForm.name);
-                msqlCommand.Parameters.AddWithValue("@grdain", NewAdmissionForm.grdain);
+                msqlCommand.Parameters.AddWithValue("@gurdian", NewAdmissionForm.grdain);
                 msqlCommand.Parameters.AddWithValue("@address", NewAdmissionForm.address);
                 msqlCommand.Parameters.AddWithValue("@phone", NewAdmissionForm.phone);
                 msqlCommand.Parameters.AddWithValue("@applyfor", NewAdmissionForm.applyfor);
