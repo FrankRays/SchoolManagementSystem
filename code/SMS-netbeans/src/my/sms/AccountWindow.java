@@ -26,19 +26,242 @@ public class AccountWindow extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        accountBalanceLabel = new javax.swing.JLabel();
+        transactionIDTxt = new java.awt.TextField();
+        transactionAmountTxt = new java.awt.TextField();
+        transactionDateTxt = new java.awt.TextField();
+        transactionReasonTextArea = new java.awt.TextArea();
+        transactionTupeCombobox = new javax.swing.JComboBox();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(125, 67, 125));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Account"));
+        setToolTipText("");
+        setMaximumSize(new java.awt.Dimension(600, 500));
+        setMinimumSize(new java.awt.Dimension(600, 500));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/13435757-women-hands-with-pencil-notebooks-and-calculator-on-wooden-table.jpg"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/15372808-hands-of-accountant-business-woman.jpg"))); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(100, 153, 153));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Transaction ID");
+        jLabel3.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel3.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel3.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(100, 153, 153));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Transaction Amount");
+        jLabel4.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel4.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel4.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(100, 153, 153));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Transaction Date");
+        jLabel5.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel5.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel5.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(100, 153, 153));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Transaction Type");
+        jLabel6.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel6.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel6.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(100, 153, 153));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Transaction Reason");
+        jLabel7.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel7.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel7.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(100, 153, 153));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Account Balance");
+        jLabel8.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel8.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel8.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        accountBalanceLabel.setBackground(new java.awt.Color(153, 153, 255));
+        accountBalanceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        accountBalanceLabel.setForeground(new java.awt.Color(100, 153, 153));
+        accountBalanceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        accountBalanceLabel.setMaximumSize(new java.awt.Dimension(250, 25));
+        accountBalanceLabel.setMinimumSize(new java.awt.Dimension(250, 25));
+        accountBalanceLabel.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        transactionIDTxt.setBackground(new java.awt.Color(152, 152, 226));
+        transactionIDTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        transactionIDTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        transactionIDTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+
+        transactionAmountTxt.setBackground(new java.awt.Color(152, 152, 226));
+        transactionAmountTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        transactionAmountTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        transactionAmountTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+
+        transactionDateTxt.setBackground(new java.awt.Color(152, 152, 226));
+        transactionDateTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        transactionDateTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        transactionDateTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+
+        transactionReasonTextArea.setBackground(new java.awt.Color(152, 152, 226));
+        transactionReasonTextArea.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        transactionReasonTextArea.setMaximumSize(new java.awt.Dimension(250, 25));
+        transactionReasonTextArea.setMinimumSize(new java.awt.Dimension(250, 25));
+
+        transactionTupeCombobox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        transactionTupeCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Student Fees", "Faculty Salary", "Stuff Salary", "Expenses" }));
+        transactionTupeCombobox.setMaximumSize(new java.awt.Dimension(250, 25));
+        transactionTupeCombobox.setMinimumSize(new java.awt.Dimension(250, 25));
+        transactionTupeCombobox.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jButton1.setBackground(new java.awt.Color(255, 153, 255));
+        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 153, 255));
+        jButton1.setText("Edit");
+        jButton1.setToolTipText("");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setMaximumSize(new java.awt.Dimension(70, 25));
+        jButton1.setMinimumSize(new java.awt.Dimension(70, 25));
+        jButton1.setPreferredSize(new java.awt.Dimension(70, 25));
+
+        jButton2.setBackground(new java.awt.Color(255, 153, 255));
+        jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 153, 255));
+        jButton2.setText("OK");
+        jButton2.setToolTipText("");
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setMaximumSize(new java.awt.Dimension(70, 25));
+        jButton2.setMinimumSize(new java.awt.Dimension(70, 25));
+        jButton2.setPreferredSize(new java.awt.Dimension(70, 25));
+
+        jButton3.setBackground(new java.awt.Color(255, 153, 255));
+        jButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 153, 255));
+        jButton3.setText("Cancel");
+        jButton3.setToolTipText("");
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setMaximumSize(new java.awt.Dimension(70, 25));
+        jButton3.setMinimumSize(new java.awt.Dimension(70, 25));
+        jButton3.setPreferredSize(new java.awt.Dimension(70, 25));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(transactionTupeCombobox, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(transactionReasonTextArea, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(transactionDateTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(transactionAmountTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(transactionIDTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel2)))))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(transactionIDTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(transactionAmountTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(transactionDateTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(transactionTupeCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(transactionReasonTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(97, 97, 97)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel accountBalanceLabel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private java.awt.TextField transactionAmountTxt;
+    private java.awt.TextField transactionDateTxt;
+    private java.awt.TextField transactionIDTxt;
+    private java.awt.TextArea transactionReasonTextArea;
+    private javax.swing.JComboBox transactionTupeCombobox;
     // End of variables declaration//GEN-END:variables
 }

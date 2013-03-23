@@ -27,19 +27,308 @@ public class StudentWindow extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        studentIDTxt = new java.awt.TextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        accountBalanceLabel = new javax.swing.JLabel();
+        accountBalanceLabel1 = new javax.swing.JLabel();
+        editCourseBtn = new javax.swing.JButton();
+        studentDOBTxt = new java.awt.TextField();
+        studentNameTxt = new java.awt.TextField();
+        submitBtn = new javax.swing.JButton();
+        studentAddressTextArea = new java.awt.TextArea();
+        jLabel4 = new javax.swing.JLabel();
+        parentNameTxt = new java.awt.TextField();
+        cancelBtn = new javax.swing.JButton();
+        studentAdmissionDateTxt = new java.awt.TextField();
+        studentContactTxt = new java.awt.TextField();
+        courseNameCombobox = new javax.swing.JComboBox();
+
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
+
+        setBackground(new java.awt.Color(98, 181, 181));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Student"));
+        setMaximumSize(new java.awt.Dimension(600, 600));
+        setMinimumSize(new java.awt.Dimension(600, 600));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/15165495-portrait-of-genius-boy-trying-to-solve-formula.jpg"))); // NOI18N
+        jLabel1.setToolTipText("");
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Student ID");
+        jLabel3.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel3.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel3.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        studentIDTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentIDTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentIDTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        studentIDTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+        studentIDTxt.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Student Name");
+        jLabel5.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel5.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel5.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Student Parent Name");
+        jLabel6.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel6.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel6.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Student Address");
+        jLabel7.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel7.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel7.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Student Admission Date");
+        jLabel8.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel8.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel8.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        accountBalanceLabel.setBackground(new java.awt.Color(153, 153, 255));
+        accountBalanceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        accountBalanceLabel.setForeground(new java.awt.Color(0, 102, 102));
+        accountBalanceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        accountBalanceLabel.setText("Student Course Name");
+        accountBalanceLabel.setMaximumSize(new java.awt.Dimension(250, 25));
+        accountBalanceLabel.setMinimumSize(new java.awt.Dimension(250, 25));
+        accountBalanceLabel.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        accountBalanceLabel1.setBackground(new java.awt.Color(153, 153, 255));
+        accountBalanceLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        accountBalanceLabel1.setForeground(new java.awt.Color(0, 102, 102));
+        accountBalanceLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        accountBalanceLabel1.setText("Student Contact");
+        accountBalanceLabel1.setMaximumSize(new java.awt.Dimension(250, 25));
+        accountBalanceLabel1.setMinimumSize(new java.awt.Dimension(250, 25));
+        accountBalanceLabel1.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        editCourseBtn.setBackground(new java.awt.Color(255, 153, 255));
+        editCourseBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        editCourseBtn.setForeground(new java.awt.Color(0, 102, 102));
+        editCourseBtn.setText("Edit Student");
+        editCourseBtn.setToolTipText("");
+        editCourseBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        editCourseBtn.setMaximumSize(new java.awt.Dimension(150, 30));
+        editCourseBtn.setMinimumSize(new java.awt.Dimension(150, 30));
+        editCourseBtn.setPreferredSize(new java.awt.Dimension(150, 30));
+
+        studentDOBTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentDOBTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentDOBTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        studentDOBTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+        studentDOBTxt.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        studentNameTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentNameTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentNameTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        studentNameTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+        studentNameTxt.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        submitBtn.setBackground(new java.awt.Color(255, 153, 255));
+        submitBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitBtn.setForeground(new java.awt.Color(0, 102, 102));
+        submitBtn.setText("Submit");
+        submitBtn.setToolTipText("");
+        submitBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        submitBtn.setMaximumSize(new java.awt.Dimension(150, 30));
+        submitBtn.setMinimumSize(new java.awt.Dimension(150, 30));
+        submitBtn.setPreferredSize(new java.awt.Dimension(150, 30));
+        submitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitBtnActionPerformed(evt);
+            }
+        });
+
+        studentAddressTextArea.setBackground(new java.awt.Color(152, 152, 226));
+        studentAddressTextArea.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentAddressTextArea.setMaximumSize(new java.awt.Dimension(250, 25));
+        studentAddressTextArea.setMinimumSize(new java.awt.Dimension(250, 25));
+        studentAddressTextArea.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Student DOB");
+        jLabel4.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel4.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel4.setPreferredSize(new java.awt.Dimension(250, 25));
+
+        parentNameTxt.setBackground(new java.awt.Color(152, 152, 226));
+        parentNameTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        parentNameTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        parentNameTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+        parentNameTxt.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        cancelBtn.setBackground(new java.awt.Color(255, 153, 255));
+        cancelBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cancelBtn.setForeground(new java.awt.Color(0, 102, 102));
+        cancelBtn.setText("Cancel");
+        cancelBtn.setToolTipText("");
+        cancelBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        cancelBtn.setMaximumSize(new java.awt.Dimension(150, 30));
+        cancelBtn.setMinimumSize(new java.awt.Dimension(150, 30));
+        cancelBtn.setPreferredSize(new java.awt.Dimension(150, 30));
+
+        studentAdmissionDateTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentAdmissionDateTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentAdmissionDateTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        studentAdmissionDateTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+        studentAdmissionDateTxt.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        studentContactTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentContactTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentContactTxt.setMaximumSize(new java.awt.Dimension(250, 25));
+        studentContactTxt.setMinimumSize(new java.awt.Dimension(250, 25));
+        studentContactTxt.setPreferredSize(new java.awt.Dimension(200, 25));
+
+        courseNameCombobox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        courseNameCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Computer Application", "Computer Science" }));
+        courseNameCombobox.setMaximumSize(new java.awt.Dimension(250, 25));
+        courseNameCombobox.setMinimumSize(new java.awt.Dimension(250, 25));
+        courseNameCombobox.setPreferredSize(new java.awt.Dimension(250, 25));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(90, 90, 90))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(10, 10, 10)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(80, 80, 80)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(80, 80, 80))
+                            .addComponent(accountBalanceLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(studentDOBTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(studentIDTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(studentNameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(parentNameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(studentAddressTextArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(studentAdmissionDateTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(courseNameCombobox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(studentContactTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(66, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(editCourseBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(studentIDTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(studentDOBTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(studentNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(parentNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(studentAddressTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(studentAdmissionDateTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(courseNameCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(accountBalanceLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(studentContactTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(editCourseBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void submitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitBtnActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel accountBalanceLabel;
+    private javax.swing.JLabel accountBalanceLabel1;
+    private javax.swing.JButton cancelBtn;
+    private javax.swing.JComboBox courseNameCombobox;
+    private javax.swing.JButton editCourseBtn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private java.awt.TextField parentNameTxt;
+    private java.awt.TextArea studentAddressTextArea;
+    private java.awt.TextField studentAdmissionDateTxt;
+    private java.awt.TextField studentContactTxt;
+    private java.awt.TextField studentDOBTxt;
+    private java.awt.TextField studentIDTxt;
+    private java.awt.TextField studentNameTxt;
+    private javax.swing.JButton submitBtn;
     // End of variables declaration//GEN-END:variables
 }
