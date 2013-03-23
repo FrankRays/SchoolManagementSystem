@@ -64,6 +64,9 @@
     <Compile Include="Admission\AddAdmissionForm.xaml.cs">
       <DependentUpon>AddAdmissionForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TakeAttendance.xaml.cs">
+      <DependentUpon>TakeAttendance.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\AddTeacher.xaml.cs">
       <DependentUpon>AddTeacher.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Admission\AddAdmissionForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TakeAttendance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

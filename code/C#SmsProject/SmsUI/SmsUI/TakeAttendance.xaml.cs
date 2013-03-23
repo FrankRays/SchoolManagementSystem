@@ -12,24 +12,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SMSUI
+namespace MmmUI
 {
     /// <summary>
-    /// Interaction logic for Attendance.xaml
+    /// Interaction logic for TakeAttendance.xaml
     /// </summary>
-    public partial class Attendance : UserControl
+    public partial class TakeAttendance : UserControl
     {
-        public Attendance()
+        public TakeAttendance()
         {
             InitializeComponent();
-        }
-
-        private void takeAttendanceBtn_Click(object sender, RoutedEventArgs e)
-        {
-            MmmUI.TakeAttendance ViewStudentobj = new MmmUI.TakeAttendance();
-
-            //mainStudentUniGrid.Children.Clear();
-            //mainStudentUniGrid.Children.Add(ViewStudentobj);
         }
     }
 }
