@@ -14,7 +14,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
-    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
         <DockPanel LastChildFill="True">
             <UniformGrid DockPanel.Dock="Bottom" Rows="1">
                 <Button Style="{StaticResource MainBtnStyle}" Name="resetStudentInfoBtn">Reset</Button>
