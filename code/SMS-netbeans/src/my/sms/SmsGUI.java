@@ -4,12 +4,13 @@
  */
 package my.sms;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.GraphicsDevice;
+import static java.awt.GraphicsDevice.WindowTranslucency.TRANSLUCENT;
+import java.awt.GraphicsEnvironment;
+import java.awt.GridBagLayout;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
-import java.awt.event.*;
-import static java.awt.GraphicsDevice.WindowTranslucency.*;
 
 /**
  *
@@ -70,6 +71,7 @@ public class SmsGUI extends javax.swing.JFrame {
 
         jTextField1.setText(bundle.getString("SmsGUI.jTextField1.text")); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
@@ -136,6 +138,7 @@ public class SmsGUI extends javax.swing.JFrame {
 
         stdtBtn.setText(bundle.getString("SmsGUI.stdtBtn.text")); // NOI18N
         stdtBtn.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 stdtBtnActionPerformed(evt);
             }
@@ -372,19 +375,14 @@ public class SmsGUI extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SmsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SmsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SmsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(SmsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
          //       new SmsGUI().setVisible(true);
                 SmsGUI tw = new SmsGUI();
