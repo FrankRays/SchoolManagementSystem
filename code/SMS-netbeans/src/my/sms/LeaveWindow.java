@@ -26,19 +26,213 @@ public class LeaveWindow extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        studentIDTxt = new java.awt.TextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        totalAttendanceLabel = new javax.swing.JLabel();
+        percentageAttendanceLabel = new javax.swing.JLabel();
+        editBtn = new javax.swing.JButton();
+        studentNameTxt = new java.awt.TextField();
+        submitBtn = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        cancelBtn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(42, 113, 219));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Leave Information"));
+        setMaximumSize(new java.awt.Dimension(600, 500));
+        setMinimumSize(new java.awt.Dimension(600, 500));
+        setPreferredSize(new java.awt.Dimension(600, 500));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/alistair-thacker.jpg"))); // NOI18N
+        jLabel1.setToolTipText("");
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 255, 51));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Student ID");
+        jLabel3.setMaximumSize(new java.awt.Dimension(250, 30));
+        jLabel3.setMinimumSize(new java.awt.Dimension(250, 30));
+        jLabel3.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        studentIDTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentIDTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentIDTxt.setMaximumSize(new java.awt.Dimension(250, 30));
+        studentIDTxt.setMinimumSize(new java.awt.Dimension(250, 30));
+        studentIDTxt.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 255, 51));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Total Attendance");
+        jLabel5.setMaximumSize(new java.awt.Dimension(250, 30));
+        jLabel5.setMinimumSize(new java.awt.Dimension(250, 30));
+        jLabel5.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(51, 255, 51));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Percentage Attendance");
+        jLabel6.setMaximumSize(new java.awt.Dimension(250, 30));
+        jLabel6.setMinimumSize(new java.awt.Dimension(250, 30));
+        jLabel6.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        totalAttendanceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        totalAttendanceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        totalAttendanceLabel.setMaximumSize(new java.awt.Dimension(250, 30));
+        totalAttendanceLabel.setMinimumSize(new java.awt.Dimension(250, 30));
+        totalAttendanceLabel.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        percentageAttendanceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        percentageAttendanceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        percentageAttendanceLabel.setMaximumSize(new java.awt.Dimension(250, 30));
+        percentageAttendanceLabel.setMinimumSize(new java.awt.Dimension(250, 30));
+        percentageAttendanceLabel.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        editBtn.setBackground(new java.awt.Color(255, 153, 255));
+        editBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        editBtn.setForeground(new java.awt.Color(28, 164, 164));
+        editBtn.setText("Edit ");
+        editBtn.setToolTipText("");
+        editBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        editBtn.setMaximumSize(new java.awt.Dimension(150, 30));
+        editBtn.setMinimumSize(new java.awt.Dimension(150, 30));
+        editBtn.setPreferredSize(new java.awt.Dimension(150, 30));
+
+        studentNameTxt.setBackground(new java.awt.Color(152, 152, 226));
+        studentNameTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        studentNameTxt.setMaximumSize(new java.awt.Dimension(250, 30));
+        studentNameTxt.setMinimumSize(new java.awt.Dimension(250, 30));
+        studentNameTxt.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        submitBtn.setBackground(new java.awt.Color(255, 153, 255));
+        submitBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitBtn.setForeground(new java.awt.Color(28, 164, 164));
+        submitBtn.setText("Submit");
+        submitBtn.setToolTipText("");
+        submitBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        submitBtn.setMaximumSize(new java.awt.Dimension(150, 30));
+        submitBtn.setMinimumSize(new java.awt.Dimension(150, 30));
+        submitBtn.setPreferredSize(new java.awt.Dimension(150, 30));
+        submitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitBtnActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 255, 51));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Student Name");
+        jLabel4.setMaximumSize(new java.awt.Dimension(250, 30));
+        jLabel4.setMinimumSize(new java.awt.Dimension(250, 30));
+        jLabel4.setPreferredSize(new java.awt.Dimension(250, 30));
+
+        cancelBtn.setBackground(new java.awt.Color(255, 153, 255));
+        cancelBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cancelBtn.setForeground(new java.awt.Color(28, 164, 164));
+        cancelBtn.setText("Cancel");
+        cancelBtn.setToolTipText("");
+        cancelBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        cancelBtn.setMaximumSize(new java.awt.Dimension(150, 30));
+        cancelBtn.setMinimumSize(new java.awt.Dimension(150, 30));
+        cancelBtn.setPreferredSize(new java.awt.Dimension(150, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/Sick_Man_art_400_20080825000730.jpg"))); // NOI18N
+        jLabel2.setToolTipText("");
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/sms/44_annual_leave_holiday.jpg"))); // NOI18N
+        jLabel9.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(90, 90, 90)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(percentageAttendanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(studentNameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(studentIDTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(totalAttendanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(editBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGap(64, 64, 64)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(studentIDTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(studentNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totalAttendanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(percentageAttendanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(editBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void submitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitBtnActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cancelBtn;
+    private javax.swing.JButton editBtn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel percentageAttendanceLabel;
+    private java.awt.TextField studentIDTxt;
+    private java.awt.TextField studentNameTxt;
+    private javax.swing.JButton submitBtn;
+    private javax.swing.JLabel totalAttendanceLabel;
     // End of variables declaration//GEN-END:variables
 }
