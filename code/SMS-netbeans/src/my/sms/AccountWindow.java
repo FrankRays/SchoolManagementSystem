@@ -40,9 +40,9 @@ public class AccountWindow extends javax.swing.JPanel {
         transactionDateTxt = new java.awt.TextField();
         transactionReasonTextArea = new java.awt.TextArea();
         transactionTupeCombobox = new javax.swing.JComboBox();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        editBtn = new javax.swing.JButton();
+        okBtn = new javax.swing.JButton();
+        cancelBtn = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(125, 67, 125));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Account"));
@@ -136,35 +136,35 @@ public class AccountWindow extends javax.swing.JPanel {
         transactionTupeCombobox.setMinimumSize(new java.awt.Dimension(250, 25));
         transactionTupeCombobox.setPreferredSize(new java.awt.Dimension(250, 25));
 
-        jButton1.setBackground(new java.awt.Color(255, 153, 255));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 153, 255));
-        jButton1.setText("Edit");
-        jButton1.setToolTipText("");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setMaximumSize(new java.awt.Dimension(70, 25));
-        jButton1.setMinimumSize(new java.awt.Dimension(70, 25));
-        jButton1.setPreferredSize(new java.awt.Dimension(70, 25));
+        editBtn.setBackground(new java.awt.Color(255, 153, 255));
+        editBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        editBtn.setForeground(new java.awt.Color(0, 153, 255));
+        editBtn.setText("Edit");
+        editBtn.setToolTipText("");
+        editBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        editBtn.setMaximumSize(new java.awt.Dimension(70, 25));
+        editBtn.setMinimumSize(new java.awt.Dimension(70, 25));
+        editBtn.setPreferredSize(new java.awt.Dimension(70, 25));
 
-        jButton2.setBackground(new java.awt.Color(255, 153, 255));
-        jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 153, 255));
-        jButton2.setText("OK");
-        jButton2.setToolTipText("");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setMaximumSize(new java.awt.Dimension(70, 25));
-        jButton2.setMinimumSize(new java.awt.Dimension(70, 25));
-        jButton2.setPreferredSize(new java.awt.Dimension(70, 25));
+        okBtn.setBackground(new java.awt.Color(255, 153, 255));
+        okBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        okBtn.setForeground(new java.awt.Color(0, 153, 255));
+        okBtn.setText("OK");
+        okBtn.setToolTipText("");
+        okBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        okBtn.setMaximumSize(new java.awt.Dimension(70, 25));
+        okBtn.setMinimumSize(new java.awt.Dimension(70, 25));
+        okBtn.setPreferredSize(new java.awt.Dimension(70, 25));
 
-        jButton3.setBackground(new java.awt.Color(255, 153, 255));
-        jButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 153, 255));
-        jButton3.setText("Cancel");
-        jButton3.setToolTipText("");
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setMaximumSize(new java.awt.Dimension(70, 25));
-        jButton3.setMinimumSize(new java.awt.Dimension(70, 25));
-        jButton3.setPreferredSize(new java.awt.Dimension(70, 25));
+        cancelBtn.setBackground(new java.awt.Color(255, 153, 255));
+        cancelBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cancelBtn.setForeground(new java.awt.Color(0, 153, 255));
+        cancelBtn.setText("Cancel");
+        cancelBtn.setToolTipText("");
+        cancelBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        cancelBtn.setMaximumSize(new java.awt.Dimension(70, 25));
+        cancelBtn.setMinimumSize(new java.awt.Dimension(70, 25));
+        cancelBtn.setPreferredSize(new java.awt.Dimension(70, 25));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -179,11 +179,11 @@ public class AccountWindow extends javax.swing.JPanel {
                         .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(editBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(okBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(44, 44, 44)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,17 +239,16 @@ public class AccountWindow extends javax.swing.JPanel {
                     .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(97, 97, 97)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(editBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(okBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel accountBalanceLabel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton cancelBtn;
+    private javax.swing.JButton editBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -258,6 +257,7 @@ public class AccountWindow extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JButton okBtn;
     private java.awt.TextField transactionAmountTxt;
     private java.awt.TextField transactionDateTxt;
     private java.awt.TextField transactionIDTxt;

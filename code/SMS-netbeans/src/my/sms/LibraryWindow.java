@@ -33,7 +33,7 @@ public class LibraryWindow extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        accountBalanceLabel = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         bookIDTxt = new java.awt.TextField();
         bookNameTxt = new java.awt.TextField();
         bookAuthorTxt = new java.awt.TextField();
@@ -101,14 +101,14 @@ public class LibraryWindow extends javax.swing.JPanel {
         jLabel8.setMinimumSize(new java.awt.Dimension(250, 25));
         jLabel8.setPreferredSize(new java.awt.Dimension(250, 25));
 
-        accountBalanceLabel.setBackground(new java.awt.Color(153, 153, 255));
-        accountBalanceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        accountBalanceLabel.setForeground(new java.awt.Color(0, 102, 102));
-        accountBalanceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        accountBalanceLabel.setText("Purchase Amount");
-        accountBalanceLabel.setMaximumSize(new java.awt.Dimension(250, 25));
-        accountBalanceLabel.setMinimumSize(new java.awt.Dimension(250, 25));
-        accountBalanceLabel.setPreferredSize(new java.awt.Dimension(250, 25));
+        jLabel9.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Purchase Amount");
+        jLabel9.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel9.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel9.setPreferredSize(new java.awt.Dimension(250, 25));
 
         bookIDTxt.setBackground(new java.awt.Color(152, 152, 226));
         bookIDTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -190,7 +190,7 @@ public class LibraryWindow extends javax.swing.JPanel {
                         .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
                         .addComponent(purchaseAmountTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
@@ -249,7 +249,7 @@ public class LibraryWindow extends javax.swing.JPanel {
                     .addComponent(bookDescriptionTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(purchaseAmountTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -260,7 +260,6 @@ public class LibraryWindow extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel accountBalanceLabel;
     private java.awt.TextField bookAuthorTxt;
     private java.awt.TextArea bookDescriptionTextArea;
     private java.awt.TextField bookIDTxt;
@@ -275,6 +274,7 @@ public class LibraryWindow extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private java.awt.TextField purchaseAmountTxt;
     private java.awt.TextField purchaseDateTxt;
     private javax.swing.JButton submitBtn;
