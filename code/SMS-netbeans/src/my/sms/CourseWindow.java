@@ -33,7 +33,7 @@ public class CourseWindow extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        accountBalanceLabel = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         courseIDTxt = new java.awt.TextField();
         courseFacultyTxt = new java.awt.TextField();
         courseNameTxt = new java.awt.TextField();
@@ -44,7 +44,7 @@ public class CourseWindow extends javax.swing.JPanel {
         courseFeesTxt = new java.awt.TextField();
         courseAdmissionDateTxt = new java.awt.TextField();
         studentsUnderTxt = new java.awt.TextField();
-        accountBalanceLabel1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         qualificationCombobox = new javax.swing.JComboBox();
 
         setBackground(new java.awt.Color(153, 0, 255));
@@ -104,14 +104,14 @@ public class CourseWindow extends javax.swing.JPanel {
         jLabel8.setMinimumSize(new java.awt.Dimension(250, 25));
         jLabel8.setPreferredSize(new java.awt.Dimension(250, 25));
 
-        accountBalanceLabel.setBackground(new java.awt.Color(153, 153, 255));
-        accountBalanceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        accountBalanceLabel.setForeground(new java.awt.Color(0, 102, 102));
-        accountBalanceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        accountBalanceLabel.setText("Students Under");
-        accountBalanceLabel.setMaximumSize(new java.awt.Dimension(250, 25));
-        accountBalanceLabel.setMinimumSize(new java.awt.Dimension(250, 25));
-        accountBalanceLabel.setPreferredSize(new java.awt.Dimension(250, 25));
+        jLabel9.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Students Under");
+        jLabel9.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel9.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel9.setPreferredSize(new java.awt.Dimension(250, 25));
 
         courseIDTxt.setBackground(new java.awt.Color(152, 152, 226));
         courseIDTxt.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -178,14 +178,14 @@ public class CourseWindow extends javax.swing.JPanel {
         studentsUnderTxt.setMaximumSize(new java.awt.Dimension(250, 25));
         studentsUnderTxt.setMinimumSize(new java.awt.Dimension(250, 25));
 
-        accountBalanceLabel1.setBackground(new java.awt.Color(153, 153, 255));
-        accountBalanceLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        accountBalanceLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        accountBalanceLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        accountBalanceLabel1.setText("Course Description");
-        accountBalanceLabel1.setMaximumSize(new java.awt.Dimension(250, 25));
-        accountBalanceLabel1.setMinimumSize(new java.awt.Dimension(250, 25));
-        accountBalanceLabel1.setPreferredSize(new java.awt.Dimension(250, 25));
+        jLabel10.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("Course Description");
+        jLabel10.setMaximumSize(new java.awt.Dimension(250, 25));
+        jLabel10.setMinimumSize(new java.awt.Dimension(250, 25));
+        jLabel10.setPreferredSize(new java.awt.Dimension(250, 25));
 
         qualificationCombobox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         qualificationCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Graduation", "Post Graduation", "MCA", "MBA", "B.Tech", "M.Tech" }));
@@ -208,7 +208,7 @@ public class CourseWindow extends javax.swing.JPanel {
                         .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
                         .addComponent(studentsUnderTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
@@ -240,7 +240,7 @@ public class CourseWindow extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(accountBalanceLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -274,12 +274,12 @@ public class CourseWindow extends javax.swing.JPanel {
                     .addComponent(courseAdmissionDateTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(accountBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(studentsUnderTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(accountBalanceLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(editCourseBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -290,8 +290,6 @@ public class CourseWindow extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel accountBalanceLabel;
-    private javax.swing.JLabel accountBalanceLabel1;
     private javax.swing.JButton cancelBtn;
     private java.awt.TextField courseAdmissionDateTxt;
     private java.awt.TextArea courseDescriptionTextArea;
@@ -301,12 +299,14 @@ public class CourseWindow extends javax.swing.JPanel {
     private java.awt.TextField courseNameTxt;
     private javax.swing.JButton editCourseBtn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JComboBox qualificationCombobox;
     private java.awt.TextField studentsUnderTxt;
     private javax.swing.JButton submitBtn;
