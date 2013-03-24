@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="AddAdmissionForm class" Url="html/1069981812.htm" />
+  <HelpKINode Title="AddAdmissionForm class" Url="html/1446790512.htm" />
+  <HelpKINode Title="AddAdmissionForm class">
+    <HelpKINode Title="about AddAdmissionForm class" Url="html/1069981812.htm" />
+    <HelpKINode Title="all members" Url="html/1446790512.htm" />
+    <HelpKINode Title="constructor" Url="html/648136264.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddAdmissionForm.AddAdmissionForm constructor" Url="html/648136264.htm" />
+  <HelpKINode Title="address property" Url="html/1104853650.htm" />
+  <HelpKINode Title="address property" Url="html/2125129045.htm" />
+  <HelpKINode Title="address property" Url="html/817618734.htm" />
+  <HelpKINode Title="AddStudent class" Url="html/1080988624.htm" />
+  <HelpKINode Title="AddStudent class" Url="html/823539136.htm" />
+  <HelpKINode Title="AddStudent class">
+    <HelpKINode Title="about AddStudent class" Url="html/823539136.htm" />
+    <HelpKINode Title="all members" Url="html/1080988624.htm" />
+    <HelpKINode Title="constructor" Url="html/1215480162.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddStudent.AddStudent constructor" Url="html/1215480162.htm" />
+  <HelpKINode Title="AddTeacher class" Url="html/1572995538.htm" />
+  <HelpKINode Title="AddTeacher class" Url="html/57398777.htm" />
+  <HelpKINode Title="AddTeacher class">
+    <HelpKINode Title="about AddTeacher class" Url="html/57398777.htm" />
+    <HelpKINode Title="all members" Url="html/1572995538.htm" />
+    <HelpKINode Title="constructor" Url="html/1322381374.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddTeacher.AddTeacher constructor" Url="html/1322381374.htm" />
+  <HelpKINode Title="AdmissionForm class" Url="html/295383122.htm" />
+  <HelpKINode Title="AdmissionForm class" Url="html/501742936.htm" />
+  <HelpKINode Title="AdmissionForm class">
+    <HelpKINode Title="about AdmissionForm class" Url="html/295383122.htm" />
+    <HelpKINode Title="all members" Url="html/501742936.htm" />
+    <HelpKINode Title="constructor" Url="html/322734622.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmissionForm.AdmissionForm constructor" Url="html/322734622.htm" />
+  <HelpKINode Title="AdmissionInfo class" Url="html/324440712.htm" />
+  <HelpKINode Title="AdmissionInfo class" Url="html/860409815.htm" />
+  <HelpKINode Title="AdmissionInfo class">
+    <HelpKINode Title="about AdmissionInfo class" Url="html/860409815.htm" />
+    <HelpKINode Title="all members" Url="html/324440712.htm" />
+    <HelpKINode Title="properties" Url="html/242470389.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmissionInfo.address property" Url="html/2125129045.htm" />
+  <HelpKINode Title="AdmissionInfo.applyfor property" Url="html/360418257.htm" />
+  <HelpKINode Title="AdmissionInfo.formNo property" Url="html/46981871.htm" />
+  <HelpKINode Title="AdmissionInfo.grdain property" Url="html/1073958903.htm" />
+  <HelpKINode Title="AdmissionInfo.id property" Url="html/990379750.htm" />
+  <HelpKINode Title="AdmissionInfo.marksprcntg property" Url="html/1548614796.htm" />
+  <HelpKINode Title="AdmissionInfo.name property" Url="html/1079628757.htm" />
+  <HelpKINode Title="AdmissionInfo.phone property" Url="html/176008051.htm" />
+  <HelpKINode Title="AdmissionInfo.qualification property" Url="html/1913672594.htm" />
+  <HelpKINode Title="App class" Url="html/1007856917.htm" />
+  <HelpKINode Title="App class" Url="html/1515480749.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="about App class" Url="html/1007856917.htm" />
+    <HelpKINode Title="all members" Url="html/1515480749.htm" />
+    <HelpKINode Title="constructor" Url="html/418661602.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/418661602.htm" />
+  <HelpKINode Title="applyfor property" Url="html/360418257.htm" />
+  <HelpKINode Title="Attendance class" Url="html/668462169.htm" />
+  <HelpKINode Title="Attendance class" Url="html/852061172.htm" />
+  <HelpKINode Title="Attendance class">
+    <HelpKINode Title="about Attendance class" Url="html/852061172.htm" />
+    <HelpKINode Title="all members" Url="html/668462169.htm" />
+    <HelpKINode Title="constructor" Url="html/504054988.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Attendance.Attendance constructor" Url="html/504054988.htm" />
+  <HelpKINode Title="blodGroup property" Url="html/1402593546.htm" />
+  <HelpKINode Title="Culture property" Url="html/582514096.htm" />
+  <HelpKINode Title="Culture property" Url="html/648115954.htm" />
+  <HelpKINode Title="DbInteraction class" Url="html/503625699.htm" />
+  <HelpKINode Title="DbInteraction class" Url="html/793024908.htm" />
+  <HelpKINode Title="DbInteraction class">
+    <HelpKINode Title="about DbInteraction class" Url="html/793024908.htm" />
+    <HelpKINode Title="all members" Url="html/503625699.htm" />
+    <HelpKINode Title="fields" Url="html/814080268.htm" />
+    <HelpKINode Title="methods" Url="html/536228851.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DbInteraction.dbmsCurrent field" Url="html/1368429098.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewTeacherindb method" Url="html/1773265446.htm" />
+  <HelpKINode Title="DbInteraction.GetAllAdmissionList method" Url="html/895067096.htm" />
+  <HelpKINode Title="DbInteraction.GetAllResidenceList method" Url="html/222006760.htm" />
+  <HelpKINode Title="DbInteraction.GetAllStudentList method" Url="html/571433702.htm" />
+  <HelpKINode Title="DbInteraction.OpenDbConnection method" Url="html/624339722.htm" />
+  <HelpKINode Title="DbInteraction.passwordCurrent field" Url="html/1567742696.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllAdmissionListinDb method" Url="html/1330435047.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllStudentList method" Url="html/1075029719.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllTeacherList method" Url="html/482762101.htm" />
+  <HelpKINode Title="DbInteraction.RegisterNewAdmission method" Url="html/989614326.htm" />
+  <HelpKINode Title="DbInteraction.RegisterNewAdmissionForm method" Url="html/1137672120.htm" />
+  <HelpKINode Title="DbInteraction.RegisterNewStudent method" Url="html/960165450.htm" />
+  <HelpKINode Title="DbInteraction.RegisterNewTeacher method" Url="html/1626637035.htm" />
+  <HelpKINode Title="dbmsCurrent field" Url="html/1368429098.htm" />
+  <HelpKINode Title="Default property" Url="html/1090704613.htm" />
+  <HelpKINode Title="Default property" Url="html/1823941204.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/784520452.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/96825742.htm" />
+  <HelpKINode Title="dob property" Url="html/1272009311.htm" />
+  <HelpKINode Title="DoRegisterNewTeacherindb method" Url="html/1773265446.htm" />
+  <HelpKINode Title="email property" Url="html/1100621924.htm" />
+  <HelpKINode Title="faculty property" Url="html/1081920159.htm" />
+  <HelpKINode Title="formNo property" Url="html/46981871.htm" />
+  <HelpKINode Title="GetAllAdmissionList method" Url="html/895067096.htm" />
+  <HelpKINode Title="GetAllResidenceList method" Url="html/222006760.htm" />
+  <HelpKINode Title="GetAllStudentList method" Url="html/571433702.htm" />
+  <HelpKINode Title="grdain property" Url="html/1073958903.htm" />
+  <HelpKINode Title="gurdain property" Url="html/1470101299.htm" />
+  <HelpKINode Title="Help class" Url="html/1295846802.htm" />
+  <HelpKINode Title="Help class" Url="html/694709760.htm" />
+  <HelpKINode Title="Help class">
+    <HelpKINode Title="about Help class" Url="html/694709760.htm" />
+    <HelpKINode Title="all members" Url="html/1295846802.htm" />
+    <HelpKINode Title="constructor" Url="html/643532420.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Help.Help constructor" Url="html/643532420.htm" />
+  <HelpKINode Title="id property" Url="html/1615426046.htm" />
+  <HelpKINode Title="id property" Url="html/922082598.htm" />
+  <HelpKINode Title="id property" Url="html/990379750.htm" />
+  <HelpKINode Title="jobId property" Url="html/1624700510.htm" />
+  <HelpKINode Title="joinClass property" Url="html/1614095659.htm" />
+  <HelpKINode Title="joinDate property" Url="html/1544257880.htm" />
+  <HelpKINode Title="joinDate property" Url="html/840631510.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/204753839.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/354242054.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="about MainWindow class" Url="html/204753839.htm" />
+    <HelpKINode Title="all members" Url="html/354242054.htm" />
+    <HelpKINode Title="constructor" Url="html/867280663.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/867280663.htm" />
+  <HelpKINode Title="marksprcntg property" Url="html/1548614796.htm" />
+  <HelpKINode Title="MmmUI namespace" Url="html/1005977087.htm" />
+  <HelpKINode Title="MmmUI.Properties namespace" Url="html/746424751.htm" />
+  <HelpKINode Title="MmmUI.Properties.Resources class" Url="html/493887244.htm" />
+  <HelpKINode Title="MmmUI.Properties.Resources class" Url="html/845771650.htm" />
+  <HelpKINode Title="MmmUI.Properties.Settings class" Url="html/1209983115.htm" />
+  <HelpKINode Title="MmmUI.Properties.Settings class" Url="html/1253530214.htm" />
+  <HelpKINode Title="MmmUI.TakeAttendance class" Url="html/1015893369.htm" />
+  <HelpKINode Title="MmmUI.TakeAttendance class" Url="html/1101143739.htm" />
+  <HelpKINode Title="name property" Url="html/1079628757.htm" />
+  <HelpKINode Title="name property" Url="html/2130166870.htm" />
+  <HelpKINode Title="name property" Url="html/46430639.htm" />
+  <HelpKINode Title="Notice class" Url="html/234710450.htm" />
+  <HelpKINode Title="Notice class" Url="html/6467019.htm" />
+  <HelpKINode Title="Notice class">
+    <HelpKINode Title="about Notice class" Url="html/234710450.htm" />
+    <HelpKINode Title="all members" Url="html/6467019.htm" />
+    <HelpKINode Title="constructor" Url="html/919146033.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Notice.Notice constructor" Url="html/919146033.htm" />
+  <HelpKINode Title="OpenDbConnection method" Url="html/624339722.htm" />
+  <HelpKINode Title="passwordCurrent field" Url="html/1567742696.htm" />
+  <HelpKINode Title="phone property" Url="html/104291158.htm" />
+  <HelpKINode Title="phone property" Url="html/176008051.htm" />
+  <HelpKINode Title="phone property" Url="html/983031875.htm" />
+  <HelpKINode Title="qualification property" Url="html/1913672594.htm" />
+  <HelpKINode Title="QueryAllAdmissionListinDb method" Url="html/1330435047.htm" />
+  <HelpKINode Title="QueryAllStudentList method" Url="html/1075029719.htm" />
+  <HelpKINode Title="QueryAllTeacherList method" Url="html/482762101.htm" />
+  <HelpKINode Title="RegisterNewAdmission method" Url="html/989614326.htm" />
+  <HelpKINode Title="RegisterNewAdmissionForm method" Url="html/1137672120.htm" />
+  <HelpKINode Title="RegisterNewStudent method" Url="html/960165450.htm" />
+  <HelpKINode Title="RegisterNewTeacher method" Url="html/1626637035.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/1224673497.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/1987289157.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/1803493529.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/2103329247.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/454412221.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/740693057.htm" />
+  <HelpKINode Title="Resources class" Url="html/192025601.htm" />
+  <HelpKINode Title="Resources class" Url="html/493887244.htm" />
+  <HelpKINode Title="Resources class" Url="html/698000277.htm" />
+  <HelpKINode Title="Resources class" Url="html/845771650.htm" />
+  <HelpKINode Title="Resources class">
+    <HelpKINode Title="about Resources class" Url="html/192025601.htm" />
+    <HelpKINode Title="about Resources class" Url="html/845771650.htm" />
+    <HelpKINode Title="all members" Url="html/493887244.htm" />
+    <HelpKINode Title="all members" Url="html/698000277.htm" />
+    <HelpKINode Title="constructor" Url="html/1589419452.htm" />
+    <HelpKINode Title="constructor" Url="html/947007955.htm" />
+    <HelpKINode Title="fields" Url="html/1259491146.htm" />
+    <HelpKINode Title="fields" Url="html/1370884552.htm" />
+    <HelpKINode Title="properties" Url="html/1095185843.htm" />
+    <HelpKINode Title="properties" Url="html/2026441650.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Resources.Culture property" Url="html/582514096.htm" />
+  <HelpKINode Title="Resources.Culture property" Url="html/648115954.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/1224673497.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/1987289157.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/1803493529.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/2103329247.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/454412221.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/740693057.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/1589419452.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/947007955.htm" />
+  <HelpKINode Title="salary property" Url="html/1542956293.htm" />
+  <HelpKINode Title="schoolFrom property" Url="html/1513625942.htm" />
+  <HelpKINode Title="Settings class" Url="html/1209983115.htm" />
+  <HelpKINode Title="Settings class" Url="html/1253530214.htm" />
+  <HelpKINode Title="Settings class" Url="html/1322479364.htm" />
+  <HelpKINode Title="Settings class" Url="html/1510368138.htm" />
+  <HelpKINode Title="Settings class" Url="html/1642943583.htm" />
+  <HelpKINode Title="Settings class" Url="html/96658964.htm" />
+  <HelpKINode Title="Settings class">
+    <HelpKINode Title="about Settings class" Url="html/1209983115.htm" />
+    <HelpKINode Title="about Settings class" Url="html/1510368138.htm" />
+    <HelpKINode Title="about Settings class" Url="html/1642943583.htm" />
+    <HelpKINode Title="all members" Url="html/1253530214.htm" />
+    <HelpKINode Title="all members" Url="html/1322479364.htm" />
+    <HelpKINode Title="all members" Url="html/96658964.htm" />
+    <HelpKINode Title="constructor" Url="html/302385754.htm" />
+    <HelpKINode Title="fields" Url="html/1506453793.htm" />
+    <HelpKINode Title="fields" Url="html/2110880715.htm" />
+    <HelpKINode Title="properties" Url="html/2013449599.htm" />
+    <HelpKINode Title="properties" Url="html/641937915.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings.Default property" Url="html/1090704613.htm" />
+  <HelpKINode Title="Settings.Default property" Url="html/1823941204.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/784520452.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/96825742.htm" />
+  <HelpKINode Title="Settings.Settings constructor" Url="html/302385754.htm" />
+  <HelpKINode Title="SmsData namespace" Url="html/1063287345.htm" />
+  <HelpKINode Title="SmsData.AdmissionInfo class" Url="html/324440712.htm" />
+  <HelpKINode Title="SmsData.AdmissionInfo class" Url="html/860409815.htm" />
+  <HelpKINode Title="SmsData.StudentInfo class" Url="html/1828203959.htm" />
+  <HelpKINode Title="SmsData.StudentInfo class" Url="html/582247959.htm" />
+  <HelpKINode Title="SmsData.TeacherInfo class" Url="html/1943386637.htm" />
+  <HelpKINode Title="SmsData.TeacherInfo class" Url="html/531958504.htm" />
+  <HelpKINode Title="SmsDb namespace" Url="html/906203572.htm" />
+  <HelpKINode Title="SmsDb.DbInteraction class" Url="html/503625699.htm" />
+  <HelpKINode Title="SmsDb.DbInteraction class" Url="html/793024908.htm" />
+  <HelpKINode Title="SmsStyle.Properties namespace" Url="html/1537522877.htm" />
+  <HelpKINode Title="SmsStyle.Properties.Resources class" Url="html/192025601.htm" />
+  <HelpKINode Title="SmsStyle.Properties.Resources class" Url="html/698000277.htm" />
+  <HelpKINode Title="SmsStyle.Properties.Settings class" Url="html/1642943583.htm" />
+  <HelpKINode Title="SmsStyle.Properties.Settings class" Url="html/96658964.htm" />
+  <HelpKINode Title="SMSUI namespace" Url="html/250299771.htm" />
+  <HelpKINode Title="SMSUI.AddAdmissionForm class" Url="html/1069981812.htm" />
+  <HelpKINode Title="SMSUI.AddAdmissionForm class" Url="html/1446790512.htm" />
+  <HelpKINode Title="SMSUI.AddStudent class" Url="html/1080988624.htm" />
+  <HelpKINode Title="SMSUI.AddStudent class" Url="html/823539136.htm" />
+  <HelpKINode Title="SMSUI.AddTeacher class" Url="html/1572995538.htm" />
+  <HelpKINode Title="SMSUI.AddTeacher class" Url="html/57398777.htm" />
+  <HelpKINode Title="SMSUI.AdmissionForm class" Url="html/295383122.htm" />
+  <HelpKINode Title="SMSUI.AdmissionForm class" Url="html/501742936.htm" />
+  <HelpKINode Title="SMSUI.App class" Url="html/1007856917.htm" />
+  <HelpKINode Title="SMSUI.App class" Url="html/1515480749.htm" />
+  <HelpKINode Title="SMSUI.Attendance class" Url="html/668462169.htm" />
+  <HelpKINode Title="SMSUI.Attendance class" Url="html/852061172.htm" />
+  <HelpKINode Title="SMSUI.Help class" Url="html/1295846802.htm" />
+  <HelpKINode Title="SMSUI.Help class" Url="html/694709760.htm" />
+  <HelpKINode Title="SMSUI.MainWindow class" Url="html/204753839.htm" />
+  <HelpKINode Title="SMSUI.MainWindow class" Url="html/354242054.htm" />
+  <HelpKINode Title="SMSUI.Notice class" Url="html/234710450.htm" />
+  <HelpKINode Title="SMSUI.Notice class" Url="html/6467019.htm" />
+  <HelpKINode Title="SMSUI.Settings class" Url="html/1322479364.htm" />
+  <HelpKINode Title="SMSUI.Settings class" Url="html/1510368138.htm" />
+  <HelpKINode Title="SMSUI.Student class" Url="html/1305217700.htm" />
+  <HelpKINode Title="SMSUI.Student class" Url="html/2147021682.htm" />
+  <HelpKINode Title="SMSUI.Teacher class" Url="html/817719335.htm" />
+  <HelpKINode Title="SMSUI.Teacher class" Url="html/834431934.htm" />
+  <HelpKINode Title="SMSUI.ViewForm class" Url="html/138473290.htm" />
+  <HelpKINode Title="SMSUI.ViewForm class" Url="html/2019227954.htm" />
+  <HelpKINode Title="SMSUI.ViewStudent class" Url="html/1148039304.htm" />
+  <HelpKINode Title="SMSUI.ViewStudent class" Url="html/1780203447.htm" />
+  <HelpKINode Title="SMSUI.ViewTeacher class" Url="html/2035431443.htm" />
+  <HelpKINode Title="SMSUI.ViewTeacher class" Url="html/252286105.htm" />
+  <HelpKINode Title="Student class" Url="html/1305217700.htm" />
+  <HelpKINode Title="Student class" Url="html/2147021682.htm" />
+  <HelpKINode Title="Student class">
+    <HelpKINode Title="about Student class" Url="html/1305217700.htm" />
+    <HelpKINode Title="all members" Url="html/2147021682.htm" />
+    <HelpKINode Title="constructor" Url="html/1472488820.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Student.Student constructor" Url="html/1472488820.htm" />
+  <HelpKINode Title="StudentInfo class" Url="html/1828203959.htm" />
+  <HelpKINode Title="StudentInfo class" Url="html/582247959.htm" />
+  <HelpKINode Title="StudentInfo class">
+    <HelpKINode Title="about StudentInfo class" Url="html/1828203959.htm" />
+    <HelpKINode Title="all members" Url="html/582247959.htm" />
+    <HelpKINode Title="properties" Url="html/1494504237.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StudentInfo.address property" Url="html/1104853650.htm" />
+  <HelpKINode Title="StudentInfo.blodGroup property" Url="html/1402593546.htm" />
+  <HelpKINode Title="StudentInfo.dob property" Url="html/1272009311.htm" />
+  <HelpKINode Title="StudentInfo.gurdain property" Url="html/1470101299.htm" />
+  <HelpKINode Title="StudentInfo.id property" Url="html/1615426046.htm" />
+  <HelpKINode Title="StudentInfo.joinClass property" Url="html/1614095659.htm" />
+  <HelpKINode Title="StudentInfo.joinDate property" Url="html/840631510.htm" />
+  <HelpKINode Title="StudentInfo.name property" Url="html/2130166870.htm" />
+  <HelpKINode Title="StudentInfo.phone property" Url="html/983031875.htm" />
+  <HelpKINode Title="StudentInfo.schoolFrom property" Url="html/1513625942.htm" />
+  <HelpKINode Title="TakeAttendance class" Url="html/1015893369.htm" />
+  <HelpKINode Title="TakeAttendance class" Url="html/1101143739.htm" />
+  <HelpKINode Title="TakeAttendance class">
+    <HelpKINode Title="about TakeAttendance class" Url="html/1101143739.htm" />
+    <HelpKINode Title="all members" Url="html/1015893369.htm" />
+    <HelpKINode Title="constructor" Url="html/1477308538.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TakeAttendance.TakeAttendance constructor" Url="html/1477308538.htm" />
+  <HelpKINode Title="tdob property" Url="html/993222161.htm" />
+  <HelpKINode Title="Teacher class" Url="html/817719335.htm" />
+  <HelpKINode Title="Teacher class" Url="html/834431934.htm" />
+  <HelpKINode Title="Teacher class">
+    <HelpKINode Title="about Teacher class" Url="html/834431934.htm" />
+    <HelpKINode Title="all members" Url="html/817719335.htm" />
+    <HelpKINode Title="constructor" Url="html/1143281066.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Teacher.Teacher constructor" Url="html/1143281066.htm" />
+  <HelpKINode Title="TeacherInfo class" Url="html/1943386637.htm" />
+  <HelpKINode Title="TeacherInfo class" Url="html/531958504.htm" />
+  <HelpKINode Title="TeacherInfo class">
+    <HelpKINode Title="about TeacherInfo class" Url="html/531958504.htm" />
+    <HelpKINode Title="all members" Url="html/1943386637.htm" />
+    <HelpKINode Title="properties" Url="html/178710610.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TeacherInfo.address property" Url="html/817618734.htm" />
+  <HelpKINode Title="TeacherInfo.email property" Url="html/1100621924.htm" />
+  <HelpKINode Title="TeacherInfo.faculty property" Url="html/1081920159.htm" />
+  <HelpKINode Title="TeacherInfo.id property" Url="html/922082598.htm" />
+  <HelpKINode Title="TeacherInfo.jobId property" Url="html/1624700510.htm" />
+  <HelpKINode Title="TeacherInfo.joinDate property" Url="html/1544257880.htm" />
+  <HelpKINode Title="TeacherInfo.name property" Url="html/46430639.htm" />
+  <HelpKINode Title="TeacherInfo.phone property" Url="html/104291158.htm" />
+  <HelpKINode Title="TeacherInfo.salary property" Url="html/1542956293.htm" />
+  <HelpKINode Title="TeacherInfo.tdob property" Url="html/993222161.htm" />
+  <HelpKINode Title="ViewForm class" Url="html/138473290.htm" />
+  <HelpKINode Title="ViewForm class" Url="html/2019227954.htm" />
+  <HelpKINode Title="ViewForm class">
+    <HelpKINode Title="about ViewForm class" Url="html/2019227954.htm" />
+    <HelpKINode Title="all members" Url="html/138473290.htm" />
+    <HelpKINode Title="constructor" Url="html/1754729052.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ViewForm.ViewForm constructor" Url="html/1754729052.htm" />
+  <HelpKINode Title="ViewStudent class" Url="html/1148039304.htm" />
+  <HelpKINode Title="ViewStudent class" Url="html/1780203447.htm" />
+  <HelpKINode Title="ViewStudent class">
+    <HelpKINode Title="about ViewStudent class" Url="html/1780203447.htm" />
+    <HelpKINode Title="all members" Url="html/1148039304.htm" />
+    <HelpKINode Title="constructor" Url="html/392991056.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ViewStudent.ViewStudent constructor" Url="html/392991056.htm" />
+  <HelpKINode Title="ViewTeacher class" Url="html/2035431443.htm" />
+  <HelpKINode Title="ViewTeacher class" Url="html/252286105.htm" />
+  <HelpKINode Title="ViewTeacher class">
+    <HelpKINode Title="about ViewTeacher class" Url="html/2035431443.htm" />
+    <HelpKINode Title="all members" Url="html/252286105.htm" />
+    <HelpKINode Title="constructor" Url="html/1059169639.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ViewTeacher.ViewTeacher constructor" Url="html/1059169639.htm" />
+</HelpKI>
