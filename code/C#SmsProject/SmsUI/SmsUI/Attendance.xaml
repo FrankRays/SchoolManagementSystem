@@ -14,9 +14,11 @@
     </UserControl.Resources>
     <DockPanel LastChildFill="True">
         <UniformGrid DockPanel.Dock="top" Rows="1">
-            <Button Style="{StaticResource MainBtnStyle}" Name="takeAttendanceBtn" Click="takeAttendanceBtn_Click">Take Attendance</Button>
-            <Button Style="{StaticResource MainBtnStyle}">Show Attendance</Button>
+            <Button Style="{StaticResource MainBtnStyle}" Name="takeStudentAttendanceBtn" Click="takeAttendanceBtn_Click">Student</Button>
+            <Button Style="{StaticResource MainBtnStyle}">Student Attendance</Button>
+            <Button Style="{StaticResource MainBtnStyle}" Name="takeTeacherAttendanceBtn" Click="takeAttendanceBtn_Click">Teacher</Button>
+            <Button Style="{StaticResource MainBtnStyle}">Teacher Attendance</Button>
         </UniformGrid>
-        <UniformGrid></UniformGrid>
+        <UniformGrid Name="attendanceUG"></UniformGrid>
     </DockPanel>
 </UserControl>

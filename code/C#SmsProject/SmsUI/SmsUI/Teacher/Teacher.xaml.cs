@@ -22,6 +22,11 @@ namespace SMSUI
         public Teacher()
         {
             InitializeComponent();
+
+            SMSUI.ViewTeacher ViewTeacherobj = new SMSUI.ViewTeacher();
+
+            TeacherMainUG.Children.Clear();
+            TeacherMainUG.Children.Add(ViewTeacherobj);
         }
 
         private void addTeacherTcrBtn_Click(object sender, RoutedEventArgs e)

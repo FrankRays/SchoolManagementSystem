@@ -22,6 +22,13 @@ namespace SMSUI
         public AdmissionForm()
         {
             InitializeComponent();
+
+            SMSUI.ViewForm ViewFormobj = new SMSUI.ViewForm();
+
+            AdmissionMainUG.Children.Clear();
+            AdmissionMainUG.Children.Add(ViewFormobj);
+
+            
         }
 
         private void viewFormBtn_Click(object sender, RoutedEventArgs e)

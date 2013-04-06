@@ -22,6 +22,11 @@ namespace SMSUI
         public Student()
         {
             InitializeComponent();
+
+            SMSUI.ViewStudent ViewStudentobj = new SMSUI.ViewStudent();
+
+            mainStudentUniGrid.Children.Clear();
+            mainStudentUniGrid.Children.Add(ViewStudentobj);
         }
 
         private void viewStudentBtn_Click(object sender, RoutedEventArgs e)

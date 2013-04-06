@@ -22,14 +22,19 @@ namespace SMSUI
         public Attendance()
         {
             InitializeComponent();
+
+            MmmUI.TakeAttendance ViewAttendance = new MmmUI.TakeAttendance();
+
+            attendanceUG.Children.Clear();
+            attendanceUG.Children.Add(ViewAttendance);
         }
 
         private void takeAttendanceBtn_Click(object sender, RoutedEventArgs e)
         {
-            MmmUI.TakeAttendance ViewStudentobj = new MmmUI.TakeAttendance();
+            MmmUI.TakeAttendance ViewAttendance = new MmmUI.TakeAttendance();
 
-            //mainStudentUniGrid.Children.Clear();
-            //mainStudentUniGrid.Children.Add(ViewStudentobj);
+            attendanceUG.Children.Clear();
+            attendanceUG.Children.Add(ViewAttendance);
         }
     }
 }
