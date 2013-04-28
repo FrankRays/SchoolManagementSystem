@@ -16,7 +16,7 @@
         <UniformGrid DockPanel.Dock="top" Rows="1">
             <Button Style="{StaticResource MainBtnStyle}" Name="viewFormBtn" Click="viewFormBtn_Click">View Form</Button>
             <Button Style="{StaticResource MainBtnStyle}" Name="addAdmissionFormBtn" Click="addAdmissionFormBtn_Click">Add Admission Form</Button>
-            <Button Style="{StaticResource MainBtnStyle}" Name="manageFormBtn">Manage Form</Button>
+            <Button Style="{StaticResource MainBtnStyle}" Name="manageFormBtn" Click="manageFormBtn_Click">Manage Form</Button>
         </UniformGrid>
         <UniformGrid Name="AdmissionMainUG"></UniformGrid>
     </DockPanel>

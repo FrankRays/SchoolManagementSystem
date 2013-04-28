@@ -45,6 +45,14 @@ namespace SMSUI
             mainStudentUniGrid.Children.Add(AddStudentobj);
         }
 
+        private void manageStudentBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SMSUI.ManageStudent AddStudentobj = new SMSUI.ManageStudent();
+
+            mainStudentUniGrid.Children.Clear();
+            mainStudentUniGrid.Children.Add(AddStudentobj);
+        }
+
         
     }
 }

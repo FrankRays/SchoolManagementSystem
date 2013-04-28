@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Admission\ManageAdmission.xaml.cs">
+      <DependentUpon>ManageAdmission.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ManageStudent.xaml.cs">
+      <DependentUpon>ManageStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ManageTecher.xaml.cs">
+      <DependentUpon>ManageTecher.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Notice.xaml.cs">
       <DependentUpon>Notice.xaml</DependentUpon>
     </Compile>
@@ -97,6 +106,18 @@
     <Compile Include="Teacher\ViewTeacher.xaml.cs">
       <DependentUpon>ViewTeacher.xaml</DependentUpon>
     </Compile>
+    <Page Include="Admission\ManageAdmission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Student\ManageStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teacher\ManageTecher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Notice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

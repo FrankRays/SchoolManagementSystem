@@ -46,5 +46,13 @@ namespace SMSUI
             AdmissionMainUG.Children.Clear();
             AdmissionMainUG.Children.Add(AddAdmissionFormobj);
         }
+
+        private void manageFormBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SMSUI.ManageAdmission AddAdmissionFormobj = new SMSUI.ManageAdmission();
+
+            AdmissionMainUG.Children.Clear();
+            AdmissionMainUG.Children.Add(AddAdmissionFormobj);
+        }
     }
 }

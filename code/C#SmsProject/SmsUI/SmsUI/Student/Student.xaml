@@ -16,7 +16,7 @@
         <UniformGrid DockPanel.Dock="top" Rows="1">
             <Button Style="{StaticResource MainBtnStyle}" Name="viewStudentBtn" Click="viewStudentBtn_Click">View Student</Button>
             <Button Style="{StaticResource MainBtnStyle}" Name="addStudentBtn" Click="addStudentBtn_Click">Add Student</Button>
-            <Button Style="{StaticResource MainBtnStyle}" Name="manageStudentBtn">Manage Student</Button>
+            <Button Style="{StaticResource MainBtnStyle}" Name="manageStudentBtn" Click="manageStudentBtn_Click">Manage Student</Button>
         </UniformGrid>
         <UniformGrid Name="mainStudentUniGrid"></UniformGrid>
     </DockPanel>

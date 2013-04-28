@@ -47,7 +47,10 @@ namespace SMSUI
 
         private void manageTcrBtn_Click(object sender, RoutedEventArgs e)
         {
+            SMSUI.ManageTeacher ManageTeacherobj = new SMSUI.ManageTeacher();
 
+            TeacherMainUG.Children.Clear();
+            TeacherMainUG.Children.Add(ManageTeacherobj);
         }
     }
 }

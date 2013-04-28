@@ -26,6 +26,8 @@ namespace SmsDb
 
         #region Student
 
+        #region Insert 
+
         public static int RegisterNewStudent(StudentInfo NewStudent)
         {
             int returnVal = 0;
@@ -68,6 +70,8 @@ namespace SmsDb
             }
             return returnVal;
         }
+        #endregion
+        #region Show
 
         public static List<StudentInfo> GetAllStudentList()
         {
@@ -118,7 +122,36 @@ namespace SmsDb
 
             return StudentList;
         }
+        #endregion
 
+        #region Delete Student Info
+
+        public static void DeleteStudent(string studentToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM student WHERE id=@studentToDelete";
+                msqlCommand.Parameters.AddWithValue("@studentToDelete", studentToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
         #endregion
 
         #region Admission
@@ -223,7 +256,8 @@ namespace SmsDb
 
         #region Teacher
 
-        
+        #region Insert
+
         public static int RegisterNewTeacher(TeacherInfo NewTeacher)
         {
             return DoRegisterNewTeacherindb(NewTeacher);
@@ -325,9 +359,40 @@ namespace SmsDb
 
             return TeacherList;
         }
+        #endregion
 
+        #region Delete Teacher Info
+
+        public static void DeleteTeacher(string teacherToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM teacher WHERE id=@teacherToDelete";
+                msqlCommand.Parameters.AddWithValue("@teacherToDelete", teacherToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
 
         #endregion
-      
+
+        #endregion
+
+
+
     }
 }
