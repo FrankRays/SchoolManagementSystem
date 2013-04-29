@@ -156,6 +156,7 @@ namespace SmsDb
 
         #region Admission
 
+        #region insert
         public static int RegisterNewAdmission(AdmissionInfo NewAdmissionForm)
         {
             return RegisterNewAdmissionForm(NewAdmissionForm);
@@ -204,6 +205,9 @@ namespace SmsDb
             return returnVal;
         }
 
+        #endregion
+
+        #region show
         public static List<AdmissionInfo> GetAllAdmissionList()
         {
             return QueryAllAdmissionListinDb();
@@ -251,6 +255,36 @@ namespace SmsDb
 
             return AdmissionList;
         }
+        #endregion
+        #region Delete Admission Info
+
+        public static void DeleteAdmission(string admissionToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM admission WHERE id=@admissionToDelete";
+                msqlCommand.Parameters.AddWithValue("@admissionToDelete", admissionToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
+
 
         #endregion
 
@@ -392,7 +426,48 @@ namespace SmsDb
 
         #endregion
 
+        #region Insert Attendance
 
+        public static int DoEnterAttendance(AttendanceInfo NewAttendance)
+        {
+            int returnVal = 0;
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+
+                //define the connection used by the command object
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "INSERT INTO attendance(id,atnddate,stuname,tchrname,stuclass,present) " +
+                                    "VALUES(@id,@atnddate,@stuname,@tchrname,@stuclass,@present)";
+
+                msqlCommand.Parameters.AddWithValue("@id", NewAttendance.id);
+                msqlCommand.Parameters.AddWithValue("@atnddate", NewAttendance.atnddate);
+                msqlCommand.Parameters.AddWithValue("@stuname", NewAttendance.stuname);
+
+                msqlCommand.Parameters.AddWithValue("@tchrname", NewAttendance.tchrname);
+                msqlCommand.Parameters.AddWithValue("@stuclass", NewAttendance.stuclass);
+                msqlCommand.Parameters.AddWithValue("@present", NewAttendance.present);
+
+                msqlCommand.ExecuteNonQuery();
+
+                returnVal = 1;
+            }
+            catch (Exception er)
+            {
+                returnVal = 0;
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+            return returnVal;
+        }
+        #endregion
 
     }
 }

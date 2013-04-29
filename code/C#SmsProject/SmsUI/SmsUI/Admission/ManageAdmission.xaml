@@ -15,12 +15,12 @@
     </UserControl.Resources>
     <DockPanel LastChildFill="True">
         <UniformGrid DockPanel.Dock="Bottom" Rows="1">
-            <Button Style="{StaticResource MainBtnStyle}" >Delete</Button>
-            <Button Style="{StaticResource MainBtnStyle}" >Edit</Button>
+            <Button Name="delAdmission" Style="{StaticResource MainBtnStyle}" Click="delAdmission_Click">Delete</Button>
+            <Button Name="editAdmission" Style="{StaticResource MainBtnStyle}" Click="editAdmission_Click">Edit</Button>
             <Button Style="{StaticResource MainBtnStyle}" >Refresh</Button>
         </UniformGrid>
         <UniformGrid DockPanel.Dock="Top">
-            <ListView Name="passView" HorizontalAlignment="Stretch" ItemsSource="{Binding allAdmissionFormCollection}" Loaded="Window_Loaded" >
+            <ListView Name="manageAdmissionView" HorizontalAlignment="Stretch" ItemsSource="{Binding allAdmissionFormCollection}" Loaded="Window_Loaded" >
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Width="100" Header="ID"  DisplayMemberBinding="{Binding id}" />

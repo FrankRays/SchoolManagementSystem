@@ -23,7 +23,7 @@ namespace SMSUI
         {
             InitializeComponent();
 
-            MmmUI.TakeAttendance ViewAttendance = new MmmUI.TakeAttendance();
+            SMSUI.TakeAttendance ViewAttendance = new SMSUI.TakeAttendance();
 
             attendanceUG.Children.Clear();
             attendanceUG.Children.Add(ViewAttendance);
@@ -31,7 +31,15 @@ namespace SMSUI
 
         private void takeAttendanceBtn_Click(object sender, RoutedEventArgs e)
         {
-            MmmUI.TakeAttendance ViewAttendance = new MmmUI.TakeAttendance();
+            SMSUI.TakeAttendance ViewAttendance = new SMSUI.TakeAttendance();
+
+            attendanceUG.Children.Clear();
+            attendanceUG.Children.Add(ViewAttendance);
+        }
+
+        private void viewAttendanceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SMSUI.ViewAttendance ViewAttendance = new SMSUI.ViewAttendance();
 
             attendanceUG.Children.Clear();
             attendanceUG.Children.Add(ViewAttendance);

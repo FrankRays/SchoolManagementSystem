@@ -53,5 +53,53 @@ namespace SMSUI
                 _allAdmissionFormCollection.Add(admission);
             }
         }
+
+        
+
+        #region Delete Admission Info
+
+        private AdmissionInfo GetSelectedAdmissionItemforDel()
+        {
+
+            AdmissionInfo admissionToDelete = null;
+
+            if (manageAdmissionView.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please Select an Item");
+
+            }
+            else
+            {
+                AdmissionInfo i = (AdmissionInfo)manageAdmissionView.SelectedItem;
+
+                admissionToDelete = _allAdmissionFormCollection.Where(item => item.id.Equals(i.id)).First();
+            }
+
+            return admissionToDelete;
+        }
+
+        private void delAdmission_Click(object sender, RoutedEventArgs e)
+        {
+            AdmissionInfo admissionToDelete = GetSelectedAdmissionItemforDel();
+            if (admissionToDelete != null)
+            {
+                allAdmissionFormCollection.Remove(admissionToDelete);
+                SmsDb.DbInteraction.DeleteAdmission(admissionToDelete.id);
+                fetchAdmissionData();
+            }
+        }
+        #endregion
+
+        private void editAdmission_Click(object sender, RoutedEventArgs e)
+        {
+            //SMSUI.ViewForm ViewFormobj = new SMSUI.ViewForm();
+            //var AdmissionForm = new AdmissionForm(); // or use the existing instance of Window1
+            //AdmissionForm.Click(addAdmissionFormBtn);
+
+            //SMSUI.AdmissionForm objAdmissionForm = new SMSUI.AdmissionForm();
+
+            //objAdmissionFormAdmissionMainUG.Children.Clear();
+            //objAdmissionFormAdmissionMainUG.Children.Add(ViewFormobj);
+        }
     }
 }

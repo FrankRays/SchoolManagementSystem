@@ -50,8 +50,35 @@ CREATE TABLE `admission` (
 
 LOCK TABLES `admission` WRITE;
 /*!40000 ALTER TABLE `admission` DISABLE KEYS */;
-INSERT INTO `admission` VALUES ('41355.3464506597','gfjf','gffg','gj','jgf','jjfg','gf','gfjfg','gjf');
 /*!40000 ALTER TABLE `admission` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `attendance`
+--
+
+DROP TABLE IF EXISTS `attendance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `attendance` (
+  `id` varchar(145) NOT NULL,
+  `atnddate` datetime DEFAULT NULL,
+  `stuname` varchar(45) DEFAULT 'N/A',
+  `tchrname` varchar(45) DEFAULT 'N/A',
+  `stuclass` varchar(45) DEFAULT 'N/A',
+  `present` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `attendance`
+--
+
+LOCK TABLES `attendance` WRITE;
+/*!40000 ALTER TABLE `attendance` DISABLE KEYS */;
+INSERT INTO `attendance` VALUES ('41393.6101463542','2013-04-29 00:00:00','vc nv','','cncvn','Yes');
+/*!40000 ALTER TABLE `attendance` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -82,7 +109,6 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES ('41354.566222419','fglknmfg','fgngj','fghgf','fngfg','2013-03-19 00:00:00','fhfg','fgnh','gfg','2013-03-29 00:00:00'),('41354.7292774306','ss','sss','ss','ss','2013-02-27 00:00:00','ss','sss','sss','2013-03-19 00:00:00');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,7 +140,6 @@ CREATE TABLE `teacher` (
 
 LOCK TABLES `teacher` WRITE;
 /*!40000 ALTER TABLE `teacher` DISABLE KEYS */;
-INSERT INTO `teacher` VALUES ('41355.3809493287','amit','2013-04-04 00:00:00','2013-02-24 00:00:00','123','456','a@gmail.com','789','csc','100000');
 /*!40000 ALTER TABLE `teacher` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -127,4 +152,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-22  9:40:25
+-- Dump completed on 2013-04-29 14:42:06
