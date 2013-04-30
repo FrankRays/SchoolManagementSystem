@@ -34,6 +34,12 @@ namespace SMSUI
 
             classLBl.Visibility = Visibility.Visible;
             ClassTxtbox.Visibility = Visibility.Visible;
+
+
+          
+            atdntforStudentCombobox.Text = "";
+            ClassTxtbox.Text = "";
+            atdntforTeacherCombobox.Text = "N/A";
         }
 
         private void teacherAtndnce_Click(object sender, RoutedEventArgs e)
@@ -46,6 +52,10 @@ namespace SMSUI
 
             classLBl.Visibility = Visibility.Collapsed;
             ClassTxtbox.Visibility = Visibility.Collapsed;
+
+            atdntforTeacherCombobox.Text = "";
+            atdntforStudentCombobox.Text = "N/A";
+            ClassTxtbox.Text = "N/A";
         }
 
         

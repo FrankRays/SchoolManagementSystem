@@ -94,7 +94,7 @@ namespace SMSUI
         private void dologinBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            if (userNameTxtbox.Text.Equals("1") && userNameTxtbox.Text.Equals("1"))
+            if (userNameTxtbox.Text.Equals("") && userNameTxtbox.Text.Equals(""))
             {
                 TeacherBtn.IsEnabled = true;
                 StudentsBtn.IsEnabled = true;

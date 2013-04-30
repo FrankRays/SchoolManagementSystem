@@ -30,7 +30,7 @@
                     <ComboBoxItem>Ms.</ComboBoxItem>
                 </ComboBox>-->
                 <Label Style="{StaticResource labelStyle}">Today</Label>
-                <DatePicker  Name="atnddateDatepicker" SelectedDate="{x:Static sys:DateTime.Now}" Style="{StaticResource datePickerStyle}"></DatePicker>
+                <DatePicker  Name="atnddateDatepicker" SelectedDate="{x:Static sys:DateTime.Now}" IsEnabled="False" Style="{StaticResource datePickerStyle}"></DatePicker>
                 <Label Name="studentLBL" Style="{StaticResource labelStyle}">Student</Label>
                 <Label Name="teacherLBL" Style="{StaticResource labelStyle}" Visibility="Collapsed">Teacher</Label>
                 <ComboBox Name="atdntforStudentCombobox" Style="{StaticResource comboboxStyle}" IsEditable="True" SelectedIndex="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" />

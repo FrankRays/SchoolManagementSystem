@@ -73,7 +73,7 @@
     <Compile Include="Admission\AddAdmissionForm.xaml.cs">
       <DependentUpon>AddAdmissionForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TakeAttendance.xaml.cs">
+    <Compile Include="Attendance\TakeAttendance.xaml.cs">
       <DependentUpon>TakeAttendance.xaml</DependentUpon>
     </Compile>
     <Compile Include="Teacher\AddTeacher.xaml.cs">
@@ -91,7 +91,7 @@
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Attendance.xaml.cs">
+    <Compile Include="Attendance\Attendance.xaml.cs">
       <DependentUpon>Attendance.xaml</DependentUpon>
     </Compile>
     <Compile Include="Settings.xaml.cs">
@@ -106,7 +106,7 @@
     <Compile Include="Teacher\ViewTeacher.xaml.cs">
       <DependentUpon>ViewTeacher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewAttendance.xaml.cs">
+    <Compile Include="Attendance\ViewAttendance.xaml.cs">
       <DependentUpon>ViewAttendance.xaml</DependentUpon>
     </Compile>
     <Page Include="Admission\ManageAdmission.xaml">
@@ -133,7 +133,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TakeAttendance.xaml">
+    <Page Include="Attendance\TakeAttendance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -169,7 +169,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Attendance.xaml">
+    <Page Include="Attendance\Attendance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -189,7 +189,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewAttendance.xaml">
+    <Page Include="Attendance\ViewAttendance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

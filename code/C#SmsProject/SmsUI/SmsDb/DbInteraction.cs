@@ -469,5 +469,51 @@ namespace SmsDb
         }
         #endregion
 
+        #region Attendance
+
+       
+        public static List<AttendanceInfo> GetAllAttendanceList()
+        {
+            List<AttendanceInfo> AttendanceList = new List<AttendanceInfo>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From attendance ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    AttendanceInfo Attendance = new AttendanceInfo();
+
+                    Attendance.id = msqlReader.GetString("id");
+                    Attendance.atnddate = msqlReader.GetDateTime("atnddate");
+                    Attendance.stuname = msqlReader.GetString("stuname");
+                    Attendance.tchrname = msqlReader.GetString("tchrname");
+                    Attendance.stuclass = msqlReader.GetString("stuclass");
+                    Attendance.present = msqlReader.GetString("present");
+
+
+                    AttendanceList.Add(Attendance);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return AttendanceList;
+        }
+        #endregion
+
     }
 }
