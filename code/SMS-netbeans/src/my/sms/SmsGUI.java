@@ -165,13 +165,6 @@ public class SmsGUI extends javax.swing.JFrame {
             }
         });
 
-        admBtn.setText(bundle.getString("SmsGUI.admBtn.text")); // NOI18N
-        admBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                admBtnActionPerformed(evt);
-            }
-        });
-
         libBtn.setText(bundle.getString("SmsGUI.libBtn.text")); // NOI18N
         libBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -271,14 +264,9 @@ public class SmsGUI extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void stdtBtnActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        // TODO add your handling code here:
-        final JDialog bwin = new JDialog();
-              
-        StudentWindow stdWindow = new StudentWindow();
+        StudentWindow sw= new StudentWindow();
         
-        bwin.add(stdWindow);
-        bwin.pack();
-        bwin.setVisible(true);
+        sw.setVisible(true);
     }                                       
 
     private void crsBtnActionPerformed(java.awt.event.ActionEvent evt) {                                       
@@ -294,20 +282,8 @@ public class SmsGUI extends javax.swing.JFrame {
 
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {                                        
        System.exit(1);
-    }                                       
-
-    private void admBtnActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        // TODO add your handling code here:
-        final JDialog bwin = new JDialog();
-              
-        AdmissionWindow admsnWindow = new AdmissionWindow();
-        
-        bwin.add(admsnWindow);
-        bwin.pack();
-        bwin.setVisible(true);
-        
-   }                                      
-
+    }                       
+    
     private void libBtnActionPerformed(java.awt.event.ActionEvent evt) {                                       
         
         JOptionPane optionPane = new JOptionPane("Is this what you need?", JOptionPane.QUESTION_MESSAGE,JOptionPane.YES_NO_OPTION);
